@@ -80,5 +80,20 @@ My docker desktop version is 2.5.0.1
 Please note the Advanced Preferences where you can select CPUs and Memory (this is important if you do not have enough resources when building your image, as it will fail)  
 ![advanced_preferences](/Docs/advanced_prefereces.png)  
 
+Info from https://docs.docker.com/docker-for-mac/  
+CPUs: By default, Docker Desktop is set to use half the number of processors available on the host machine. To increase processing power, set this to a higher number; to decrease, lower the number.  
+
+Memory: By default, Docker Desktop is set to use 2 GB runtime memory, allocated from the total available memory on your Mac. To increase the RAM, set this to a higher number. To decrease it, lower the number.  
+
+Swap: Configure swap file size as needed. The default is 1 GB.  
+
+Disk image size: Specify the size of the disk image.  
+
+Disk image location: Specify the location of the Linux volume where containers and images are stored.  
+
+You can also move the disk image to a different location. If you attempt to move a disk image to a location that already has one, you get a prompt asking if you want to use the existing image or replace it.  
+
+
+
 
 
