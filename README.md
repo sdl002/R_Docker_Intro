@@ -108,7 +108,7 @@ A self-sufficient runtime for containers
 
 Options:
       --config string      Location of client config files (default
-                           "/Users/sdl002/.docker")
+                           "/Users/username/.docker")
   -c, --context string     Name of the context to use to connect to the
                            daemon (overrides DOCKER_HOST env var and
                            default context set with "docker context use")
@@ -119,31 +119,13 @@ Options:
                            (default "info")
       --tls                Use TLS; implied by --tlsverify
       --tlscacert string   Trust certs signed only by this CA (default
-                           "/Users/sdl002/.docker/ca.pem")
+                           "/Users/username/.docker/ca.pem")
       --tlscert string     Path to TLS certificate file (default
-                           "/Users/sdl002/.docker/cert.pem")
+                           "/Users/username/.docker/cert.pem")
       --tlskey string      Path to TLS key file (default
-                           "/Users/sdl002/.docker/key.pem")
+                           "/Users/username/.docker/key.pem")
       --tlsverify          Use TLS and verify the remote
   -v, --version            Print version information and quit
-
-Management Commands:
-  builder     Manage builds
-  config      Manage Docker configs
-  container   Manage containers
-  context     Manage contexts
-  image       Manage images
-  network     Manage networks
-  node        Manage Swarm nodes
-  plugin      Manage plugins
-  scan*       Docker Scan (Docker Inc., v0.3.4)
-  secret      Manage Docker secrets
-  service     Manage services
-  stack       Manage Docker stacks
-  swarm       Manage Swarm
-  system      Manage Docker
-  trust       Manage trust on Docker images
-  volume      Manage volumes
 
 ```
 
