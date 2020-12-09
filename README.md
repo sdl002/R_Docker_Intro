@@ -18,7 +18,7 @@ Thursday December 10, 2020
 
   
     
- # 1. What is Docker and why should we use it?
+# 1. What is Docker and why should we use it?
 #### “Docker is an open platform for developing, shipping, and running applications.” - [link to Docker Getting Started](docs.docker.com/get-started/overview/)  
 Docker Provides the following benefits:  
 Provides ability to package and run application in a container  
@@ -63,7 +63,13 @@ An image is a read-only template with instructions for creating a Docker conta
 #### Docker Container
 A container is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI. You can connect a container to one or more networks, attach storage to it, or even create a new image based on its current state.  
   
-  
+# 2. Launching Docker Desktop
+
+#### Begin by installing Docker Desktop:
+- mac (https://docs.docker.com/mac/step_one/)  
+- linux (https://docs.docker.com/linux/step_one/)   
+- windows (https://docs.docker.com/get-started/)  
+
 
 
 
