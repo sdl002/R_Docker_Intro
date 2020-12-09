@@ -65,7 +65,8 @@ An image is a read-only template with instructions for creating a Docker conta
   
 #### Docker Container
 A container is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI. You can connect a container to one or more networks, attach storage to it, or even create a new image based on its current state.  
-  
+&nbsp;    
+&nbsp;  
 # 2. Launching Docker Desktop
 
 #### Begin by installing Docker Desktop:
@@ -93,8 +94,8 @@ Disk image size: Specify the size of the disk image.
 Disk image location: Specify the location of the Linux volume where containers and images are stored.  
 
 You can also move the disk image to a different location. If you attempt to move a disk image to a location that already has one, you get a prompt asking if you want to use the existing image or replace it.  
-&nbsp; 
-
+&nbsp;  
+&nbsp;  
 ## 3. Running Docker via command line
 
 To ensure you have Docker properly installed, using the command line interface (CLI) run
@@ -163,7 +164,8 @@ Your directory structure should now look like this:
 
 We are now ready to begin making our Dockerfile, but before we do so, lets introduce ourselves to Docker hub, which is where we will get the base image that we want to use.
 
-
+&nbsp;  
+&nbsp;  
 ## 4. Pulling from Docker Hub (Rocker)
 
 ### Check out Docker hub (Rocker) https://hub.docker.com/u/rocker
@@ -182,4 +184,18 @@ Users should include the version tag, e.g. rocker/verse:3.3.1 when reproduciblit
 ```
 docker pull rocker/tidyverse:4.0.2
 ```
+You will see a download slowly occuring... as you pull this image to you local machine
 
+example:
+```
+4.0.2: Pulling from rocker/tidyverse
+a4a2a29f9ba4: Already exists 
+127c9761dcba: Already exists 
+d13bf203e905: Already exists 
+4039240d2e0b: Already exists 
+68f8245df2f2: Pull complete 
+68627150f771: Extracting  118.7MB/291.5MB
+08571680fe43: Download complete 
+e0795ed2db1b: Download complete 
+fc7f39d4c84c: Download complete 
+```
