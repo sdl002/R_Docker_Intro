@@ -164,7 +164,19 @@ Your directory structure should now look like this:
 We are now ready to begin making our Dockerfile, but before we do so, lets introduce ourselves to Docker hub, which is where we will get the base image that we want to use.
 
 
-### 4. Pulling from Docker Hub (Rocker)
+## 4. Pulling from Docker Hub (Rocker)
+
+### Check out Docker hub (Rocker) https://hub.docker.com/u/rocker
+
+"This repository provides alternate stack to r-base, with an emphasis on reproducibility. Compared to those images, this stack:
+
+builds on debian stable (debian:jessie for versions < 3.4.0, debian:stretch after, etc) release instead of debian:testing, so no more apt-get breaking when debian:testing repos are updated and you had to muck with -t unstable to get apt-get to work.
+Further, this stack installs a fixed version of R itself from source, rather than whatever is already packaged for Debian (the r-base stack gets the latest R version as a binary from debian:unstable),
+and it installs all R packages from a fixed snapshot of CRAN at a given date (MRAN repos).
+provides images that are generally smaller than the r-base series
+Users should include the version tag, e.g. rocker/verse:3.3.1 when reproduciblity is paramount, and use the default latest tag, e.g. rocker/verse for the most up-to-date R packages. All images still receive any Debian security patch updates. Note that any debian packages on these images (C libraries, compilers, etc) will likely be older/earlier versions than those found on the r-base image series."
+
+
 
 
 
