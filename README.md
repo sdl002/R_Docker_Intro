@@ -45,22 +45,22 @@ Easy to maintain versioning and updates (i.e. CodeCommit/CodePipeline in AWS)
 Photo and info below is from https://docs.docker.com/get-started/overview/
 
   
-### Docker daemon  
+#### Docker daemon  
 The Docker daemon (dockerd) listens for Docker API requests and manages Docker objects such as images, containers, networks, and volumes. A daemon can also communicate with other daemons to manage Docker services.  
 
-### Docker client
+#### Docker client
 The Docker client is the primary way that many Docker users interact with Docker. When you use commands such as docker run, the client sends these commands to dockerd, which carries them out. The docker command uses the Docker API. The Docker client can communicate with more than one daemon.  
 
-### Docker registry
+#### Docker registry
 Docker registry stores Docker images. Docker Hub is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub by default.   
   
-## Docker objects
+### Docker objects
 ###### When you use Docker, you are creating and using images, containers, networks, volumes, plugins, and other objects.   
   
-### Docker image
+#### Docker image
 An image is a read-only template with instructions for creating a Docker container. Often, an image is based on another image, with some additional customization. For example, you may build an image which is based on the ubuntu image, but installs the Apache web server and your application, as well as the configuration details needed to make your application run.  
   
- ### Docker Container
+#### Docker Container
 A container is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI. You can connect a container to one or more networks, attach storage to it, or even create a new image based on its current state.  
   
   
