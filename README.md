@@ -176,7 +176,10 @@ and it installs all R packages from a fixed snapshot of CRAN at a given date (MR
 provides images that are generally smaller than the r-base series
 Users should include the version tag, e.g. rocker/verse:3.3.1 when reproduciblity is paramount, and use the default latest tag, e.g. rocker/verse for the most up-to-date R packages. All images still receive any Debian security patch updates. Note that any debian packages on these images (C libraries, compilers, etc) will likely be older/earlier versions than those found on the r-base image series."
 
-![rocker_screenshot](/Docs/ROCKER_DockerHub.png) 
+![rocker_screenshot](/Docs/ROCKER_DockerHub.png)  
 
-
+##### Lets go ahead anad pull Rocker
+```
+docker pull rocker/tidyverse:4.0.2
+```
 
