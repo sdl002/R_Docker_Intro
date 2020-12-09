@@ -94,6 +94,8 @@ Disk image location: Specify the location of the Linux volume where containers a
 You can also move the disk image to a different location. If you attempt to move a disk image to a location that already has one, you get a prompt asking if you want to use the existing image or replace it.  
 &nbsp; 
 
+## 3. Running Docker via command line
+
 To ensure you have Docker properly installed, using the command line interface (CLI) run
 ```
 docker
