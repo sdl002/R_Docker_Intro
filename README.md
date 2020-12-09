@@ -7,6 +7,9 @@
 ###### Thursday December 10, 2020
 &nbsp;  
 &nbsp;  
+
+![Docker_gif](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
 ### We will cover the following focus points:
 ### 1. What is Docker and why should we use it?
 ### 2. Launching Docker Desktop
@@ -14,8 +17,8 @@
 ### 4. Pulling from Docker Hub (Rocker)
 ### 5. Create a Dockerfile and Build a Docker Image
 
-
-
+&nbsp;  
+&nbsp;  
   
     
 # 1. What is Docker and why should we use it?
