@@ -20,8 +20,14 @@ Thursday December 10, 2020
     
  # 1. What is Docker and why should we use it?
 #### “Docker is an open platform for developing, shipping, and running applications.” - [link to Docker Getting Started](docs.docker.com/get-started/overview/)  
+Docker Provides the following benefits:  
 Provides ability to package and run application in a container  
 Containers are lightweight (fast)  
 Consistent and reproducible  
 Self contained  
 Responsive deployment and scaling  
+
+### Is using a container the same as using a virtual machine (VM)?
+![vm_vs_container](/Users/sdl002/Downloads/vm_vs_container.png)
+
+vm_vs_container.png
