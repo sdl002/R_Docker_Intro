@@ -1,8 +1,10 @@
-## Welcome to GitHub Pages
+# This GitHub page will be used for the R-Ladies presentation on Thursday Dec 10, 2020
 
-You can use the [editor on GitHub](https://github.com/sdl002/R_Docker_Intro/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+
+
+
 
 ### Markdown
 
