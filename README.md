@@ -128,4 +128,14 @@ Options:
   -v, --version            Print version information and quit
 
 ```
+You can also look for any images on your machine by running:
 
+```
+docker images
+```
+
+In response, you will see Repo IDs and info about your images
+
+```
+REPOSITORY                                                                         TAG                 IMAGE ID            CREATED             SIZE
+```
