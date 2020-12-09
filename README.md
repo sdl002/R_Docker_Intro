@@ -28,6 +28,6 @@ Self contained
 Responsive deployment and scaling  
 
 ### Is using a container the same as using a virtual machine (VM)?
-![vm_vs_container](/Users/sdl002/Downloads/vm_vs_container.png)
+![vm_vs_container](/docs/vm_vs_container.png)
 
 vm_vs_container.png
