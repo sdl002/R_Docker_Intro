@@ -149,3 +149,8 @@ mkdir Test_Script
 cd Test_Script
 ```
 
+Now either download the Rscript: R_Docker_Intro/Example_Data/Generate_tSNE.R
+*-or-*
+use vim and copy/past text from R_Docker_Intro/Example_Data/Generate_tSNE.R to a new file called Generate_tSNE.R
+
+
