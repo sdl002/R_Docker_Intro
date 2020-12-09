@@ -78,7 +78,7 @@ My docker desktop version is 2.5.0.1
 
 &nbsp;  
 Please note the Advanced Preferences where you can select CPUs and Memory (this is important if you do not have enough resources when building your image, as it will fail)  
-![advanced_preferences](/Docs/advanced_prefereces.png.png)  
+![advanced_preferences](/Docs/advanced_prefereces.png)  
 
 
 
