@@ -160,3 +160,7 @@ Your directory structure should now look like this:
     └── Generate_tSNE.R
 ```
 
+### Now that we have our script, lets make our Dockerfile!
+###### I will use vim here, but feel free to use your favorite text editor
+
+
