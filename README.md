@@ -76,6 +76,9 @@ A container is a runnable instance of an image. You can create, start, stop, mov
 My docker desktop version is 2.5.0.1 
 ![basic_info_screenshot](/Docs/Docker_Desktop_screenshot.png)  
 
+&nbsp;  
+Please note the Advanced Preferences where you can select CPUs and Memory (this is important if you do not have enough resources when building your image, as it will fail)  
+![advanced_preferences](/Docs/Docker_Desktop_screenshot.png)  
 
 
 
