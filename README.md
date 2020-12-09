@@ -154,9 +154,9 @@ Now either download the Rscript: /R_Docker_Intro/Example_Data/Generate_tSNE.R
 use vim and copy/past text from /R_Docker_Intro/Example_Data/Generate_tSNE.R to a new file called Generate_tSNE.R  
 
 Your directory structure should now look like this:
-
+```
 ├── Dockerfile
 └── Test_Script
     └── Generate_tSNE.R
-
+```
 
