@@ -3,7 +3,7 @@
 # Harmonizing Docker and R 
 
 #### Stephanie LaHaye, PhD
-R-Ladies Columbus \n
+R-Ladies Columbus  
 Thursday December 10, 2020
 
 
