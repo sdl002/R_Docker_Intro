@@ -39,5 +39,6 @@ Applications that are running on containers are completely segregated and isolat
 Have a consistent environment (reproducible) and shareable to outside environments  
 Easy to maintain versioning and updates (i.e. CodeCommit/CodePipeline in AWS)  
 
-
+![basic_info](/Docs/Docker_Basic.png)  
+Photo from 
 
