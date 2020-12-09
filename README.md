@@ -15,6 +15,7 @@
 ### 3. Running Docker via command line
 ### 4. Pulling from Docker Hub (Rocker)
 ### 5. Create a Dockerfile and Build a Docker Image
+### 6. Running our Docker Image: interactive and scripted runs
 
 &nbsp;  
 &nbsp;  
@@ -160,7 +161,10 @@ Your directory structure should now look like this:
     └── Generate_tSNE.R
 ```
 
-### Now that we have our script, lets make our Dockerfile!
-###### I will use vim here, but feel free to use your favorite text editor
+We are now ready to begin making our Dockerfile, but before we do so, lets introduce ourselves to Docker hub, which is where we will get the base image that we want to use.
+
+
+### 4. Pulling from Docker Hub (Rocker)
+
 
 
