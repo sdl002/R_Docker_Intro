@@ -74,6 +74,7 @@ A container is a runnable instance of an image. You can create, start, stop, mov
 
 ##### I will be performing all presentation examples using Docker Desktop for Mac
 My docker desktop version is 2.5.0.1 
+![basic_info](/Docs/Docker_Desktop_screenshot.png)  
 
 
 
