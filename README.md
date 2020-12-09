@@ -6,7 +6,6 @@
 ###### R-Ladies Columbus  
 ###### Thursday December 10, 2020
 &nbsp;  
-&nbsp;  
 
 ![Docker_gif](/Docs/Cute_Docker.gif)
 
