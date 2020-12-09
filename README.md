@@ -172,7 +172,7 @@ We are now ready to begin making our Dockerfile, but before we do so, lets intro
 
 ![rocker_screenshot](/Docs/ROCKER_DockerHub.png)  
 
-##### Lets go ahead anad pull Rocker
+##### Lets go ahead and pull the rocker version we want (its important to list a version if you want to maintain reproducibility)
 ```
 docker pull rocker/tidyverse:4.0.2
 ```
@@ -196,6 +196,11 @@ You should see a line that starts with (under the headers):
 ```
 rocker/tidyverse
 ```
+
+&nbsp;  
+&nbsp;  
+
+## 5. Create a Dockerfile and Build a Docker Image
 
 We are now ready to build our Dockerfile using the base rocker/tidyverse image.
 
@@ -236,8 +241,12 @@ RUN apt-get update && apt-get install -y\
 ```
 docker build --tag docker_test .
 ```
+&nbsp;  
+&nbsp;  
 
-### ENTRYPOINT in with and test out R environment (tidyverse base image)
+## 6. Running our Docker Image: interactive and scripted runs
+
+### ENTRYPOINT in and test out R environment (tidyverse base image)
 #### To test your docker container interactively, run the following command (alternatively you can use the image number instead of tagged name):
 
 ```
