@@ -5,8 +5,8 @@
 #### Stephanie LaHaye, PhD
 ###### R-Ladies Columbus  
 ###### Thursday December 10, 2020
-
-
+&nbsp;  
+&nbsp;  
 ### We will cover the following focus points:
 ### 1. What is Docker and why should we use it?
 ### 2. Launching Docker Desktop
