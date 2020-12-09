@@ -15,3 +15,13 @@ Thursday December 10, 2020
 ## 5. Create a Dockerfile and Build a Docker Image
 
 
+
+  
+    
+ # 1. What is Docker and why should we use it?
+#### “Docker is an open platform for developing, shipping, and running applications.” - docs.docker.com/get-started/overview/  
+Provides ability to package and run application in a container  
+Containers are lightweight (fast)  
+Consistent and reproducible  
+Self contained  
+Responsive deployment and scaling  
