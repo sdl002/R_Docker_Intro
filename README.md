@@ -29,5 +29,6 @@ Responsive deployment and scaling
 
 ### Is using a container the same as using a virtual machine (VM)?
 ![vm_vs_container](/Docs/vm_vs_container.png)
+Photo from https://www.softserveinc.com/en-us/blog/security-containers-vs-virtual-machines
 
-vm_vs_container.png
+
