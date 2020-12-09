@@ -232,3 +232,30 @@ RUN apt-get update && apt-get install -y\
 
 ```
 
+### BUILD your image
+```
+docker build --tag docker_test .
+```
+
+### ENTRYPOINT in with and test out R environment (tidyverse base image)
+#### To test your docker container interactively, run the following command (alternatively you can use the image number instead of tagged name):
+
+```
+docker run --entrypoint /bin/bash -i -t docker_test:latest
+```
+Upon running this command, you will want to begin an R session, by typing in "R" on the command line. Becuase tidyverse is already installed, you can test this out by using the library function:
+```
+R
+``` 
+```
+library("ggplot2")
+```
+If your Docker Image was built successfully, this should run in an interactive R session and should allow you to perform any normal R functionalities within the container.
+
+To exit the r session and then the docker container:
+
+```
+quit()
+
+exit
+```
