@@ -8,7 +8,7 @@
 &nbsp;  
 &nbsp;  
 
-![Docker_gif](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Docker_gif](/Docs/Cute_Docker.gif)
 
 ### We will cover the following focus points:
 ### 1. What is Docker and why should we use it?
