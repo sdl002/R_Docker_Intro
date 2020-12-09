@@ -189,13 +189,9 @@ You will see a download slowly occuring... as you pull this image to you local m
 example:
 ```
 4.0.2: Pulling from rocker/tidyverse
-a4a2a29f9ba4: Already exists 
-127c9761dcba: Already exists 
-d13bf203e905: Already exists 
-4039240d2e0b: Already exists 
-68f8245df2f2: Pull complete 
-68627150f771: Extracting  118.7MB/291.5MB
-08571680fe43: Download complete 
-e0795ed2db1b: Download complete 
-fc7f39d4c84c: Download complete 
+
+.....info on layers here.....
+
+Status: Downloaded newer image for rocker/tidyverse:4.0.2
+docker.io/rocker/tidyverse:4.0.2
 ```
