@@ -199,14 +199,36 @@ rocker/tidyverse
 
 We are now ready to build our Dockerfile using the base rocker/tidyverse image.
 
-Here is some basic background on this image:
+##### A litte background on this image:
 "This repository provides alternate stack to r-base, with an emphasis on reproducibility. Compared to those images, this stack:  
-
+&nbsp; 
 -builds on debian stable (debian:jessie for versions < 3.4.0, debian:stretch after, etc) release instead of debian:testing, so no more apt-get breaking when debian:testing repos are updated and you had to muck with -t unstable to get apt-get to work.  
 -Further, this stack installs a fixed version of R itself from source, rather than whatever is already packaged for Debian (the r-base stack gets the latest R version as a binary from debian:unstable),
 and it installs all R packages from a fixed snapshot of CRAN at a given date (MRAN repos).  
 -provides images that are generally smaller than the r-base series. 
 -Users should include the version tag, e.g. rocker/verse:3.3.1 when reproduciblity is paramount, and use the default latest tag, e.g. rocker/verse for the most up-to-date R packages. All images still receive any Debian security patch updates. Note that any debian packages on these images (C libraries, compilers, etc) will likely be older/earlier versions than those found on the r-base image series."  
+&nbsp; 
+
+Go to your text editor, and open up your Dockerfile, its time to set it up!
+```
+vi Dockerfile
+```
+
+```
+FROM rocker/tidyverse:4.0.2
+#R version 4.0.2
+LABEL software.name="My First Docker Test"
+LABEL software.version="v1.0"
+LABEL software.description="Running tSNE analysis on iris data"
+LABEL container.base.image="debian"
+LABEL tags="Docker Test with R/rocker"
+
+#Install necessary tools onto debian system
+RUN apt-get update && apt-get install -y\
+  apt-utils \
+  vim \
+  less \
 
 
+```
 
