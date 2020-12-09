@@ -139,3 +139,13 @@ In response, you will see Repo IDs and info about your images (See headers below
 ```
 REPOSITORY      TAG     IMAGE ID      CREATED     SIZE
 ```
+
+## Now lets start by making a very basic Dockerfile  
+```
+mkdir Docker_Test
+cd Docker_Test
+touch Dockerfile
+mkdir Test_Script
+cd Test_Script
+```
+
