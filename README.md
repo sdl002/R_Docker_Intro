@@ -39,18 +39,26 @@ Applications that are running on containers are completely segregated and isolat
 Have a consistent environment (reproducible) and shareable to outside environments  
 Easy to maintain versioning and updates (i.e. CodeCommit/CodePipeline in AWS)  
 
+## Breakdown of basic Docker Architecture and Objects
+
 ![basic_info](/Docs/Docker_Basic.png)  
 Photo and info below is from https://docs.docker.com/get-started/overview/
 
+  
+#### Docker daemon  
 The Docker daemon (dockerd) listens for Docker API requests and manages Docker objects such as images, containers, networks, and volumes. A daemon can also communicate with other daemons to manage Docker services.  
-  
+
+#### Docker client
 The Docker client is the primary way that many Docker users interact with Docker. When you use commands such as docker run, the client sends these commands to dockerd, which carries them out. The docker command uses the Docker API. The Docker client can communicate with more than one daemon.  
+
+#### Docker registry
+Docker registry stores Docker images. Docker Hub is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub by default.   
   
-An image is a read-only template with instructions for creating a Docker container. Often, an image is based on another image, with some additional customization. For example, you may build an image which is based on the ubuntu image, but installs the Apache web server and your application, as well as the configuration details needed to make your application run.  
+#### Docker image
+(Docker Object) An image is a read-only template with instructions for creating a Docker container. Often, an image is based on another image, with some additional customization. For example, you may build an image which is based on the ubuntu image, but installs the Apache web server and your application, as well as the configuration details needed to make your application run.  
   
-Docker registry stores Docker images. Docker Hub is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub by default.  
-  
-A container is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI. You can connect a container to one or more networks, attach storage to it, or even create a new image based on its current state.  
+ #### Docker Container
+(Docker Object) A container is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI. You can connect a container to one or more networks, attach storage to it, or even create a new image based on its current state.  
   
   
 
