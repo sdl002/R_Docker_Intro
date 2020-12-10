@@ -196,7 +196,7 @@ docker images
 ```
 You should see a line that starts with (under the headers):
 ```
-rocker/tidyverse
+rocker/base-r
 ```
 
 &nbsp;  
