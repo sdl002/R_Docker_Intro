@@ -168,9 +168,9 @@ We are now ready to begin making our Dockerfile, but before we do so, lets intro
 
 &nbsp;  
 &nbsp;  
-## 4. Pulling from Docker Hub (Rocker)
+## 4. Pulling from Docker Hub (rocker)
 
-### Check out Docker hub (Rocker) https://hub.docker.com/u/rocker
+### Check out Docker hub (rocker) https://hub.docker.com/u/rocker
 
 ![rocker_screenshot](Docs/rocker_base_screenshot.png)  
 
@@ -263,7 +263,7 @@ exit
 
 Our container is built and we have successfully tested R within an interactive session. It is now time to add a few lines to our Dockerfile to install required packages and to copy our script over to our container (Remember, the container is a completely insulated machine, it really won't be talking to our local machine while running, so we have to give it the files it needs to access)
 
-## WARNING: R must be compiled, this step will take at least 5 minutes! However, we will discuss the cache process and how to optimize your code to reduce time spent recompiling after each change
+## WARNING: R must be compiled, this step will take ~5 minutes! However, we will discuss the cache process and how to optimize your code to reduce time spent recompiling after each change
 
 ```
 FROM rocker/r-base:4.0.2
