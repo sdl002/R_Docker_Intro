@@ -354,5 +354,8 @@ docker build -t "myimage:1.0" .
 
 So at this point you might this is pretty cool, but not overly useful. Where this get more exciting is how this can be used to fit into modular work flows and easily read/write from cloud storage like AWS S3 buckets and Aurora PostgreSQL databases. 
 
+![serverless](Docs/1_3BTBz6dXPkYnNI7-sTBWJw.png) 
+image from https://towardsdatascience.com/how-to-implement-a-serverless-batch-job-architecture-on-aws-b3358cd33428
+
 At IGM we are working on using Docker in almost all of our workflows. Docker fits will into automated and modular workflows.
-![rocker_screenshot](Docs/rocker_base_screenshot.png) 
+
