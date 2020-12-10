@@ -349,7 +349,7 @@ So at this point you might this is pretty cool, but not overly useful. Where thi
 
 At IGM we are working on using Docker in almost all of our workflows. Docker fits will into automated and modular workflows. An example of a current workflow using rocker as a base is below:
 
-
+![rocker_screenshot](/Docs/ROCKER_DockerHub.png)  
 
 
 
