@@ -34,6 +34,8 @@ tsne.plot <- ggplot(tsne.df, aes(x=TSNE1, y=TSNE2, color = species)) + geom_poin
   theme(axis.title.x = element_text(color = "black", size = 12, angle = 00, face = "bold")) +
   theme(axis.title.y = element_text(color = "black", size = 12, angle = 90, face = "bold"))  + 
   ggtitle("Harmonizing Docker + R: Test tSNE") + scale_color_manual(values=c("#08F7FE","#FE53BB","#F5D300"))
-tsne.plot
 
-ggsave("test_tSNE.png", height=8, width=8)
+
+pdf("/home/analysis/test_tSNE.pdf")
+tsne.plot
+dev.off()
