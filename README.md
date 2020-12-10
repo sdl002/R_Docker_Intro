@@ -347,10 +347,4 @@ docker build -t "myimage:1.0" .
 
 So at this point you might this is pretty cool, but not overly useful. Where this get more exciting is how this can be used to fit into modular work flows and easily read/write from cloud storage like AWS S3 buckets and Aurora PostgreSQL databases. 
 
-At IGM we are working on using Docker in almost all of our workflows. Docker fits will into automated and modular workflows. An example of a current workflow using rocker as a base is below:
-
-![docker_example](/Docs/AWS_example.png)  
-from LaHaye et al., 2020 Under Revision
-
-
-
+At IGM we are working on using Docker in almost all of our workflows. Docker fits will into automated and modular workflows.
