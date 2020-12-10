@@ -10,7 +10,7 @@
 ![Docker_gif](/Docs/Cute_Docker.gif)
 
 ### We will cover the following focus points:
-### [1. What is Docker and why should we use it?](#-1--what-is-docker-and-why-should-we-use-it)
+### [1. What is Docker and why should we use it?](#anchor1)
 ### 2. Launching Docker Desktop
 ### 3. Running Docker via command line
 ### 4. Pulling from Docker Hub (Rocker)
@@ -22,7 +22,8 @@
 &nbsp;  
 &nbsp;  
   
-    
+
+<a name="anchor1"></a>
 # 1. What is Docker and why should we use it?
 #### “Docker is an open platform for developing, shipping, and running applications.” - [link to Docker Getting Started](docs.docker.com/get-started/overview/)  
 Docker Provides the following benefits:  
