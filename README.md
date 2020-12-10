@@ -307,7 +307,7 @@ docker rm temp-container
 ```
 
 
-### A few useful docker commands to remember:
+## A few useful docker commands to remember:
 
 #### Check for Docker images
 ```
@@ -341,3 +341,16 @@ docker pull "image name"
 ```
 docker build -t "myimage:1.0" .
 ```
+&nbsp;  
+&nbsp;
+## 8. How all of this gets 10 times cooler with serverless technology!
+
+So at this point you might this is pretty cool, but not overly useful. Where this get more exciting is how this can be used to fit into modular work flows and easily read/write from cloud storage like AWS S3 buckets and Aurora PostgreSQL databases. 
+
+At IGM we are working on using Docker in almost all of our workflows. Docker fits will into automated and modular workflows. An example of a current workflow using rocker as a base is below:
+
+
+
+
+
+
