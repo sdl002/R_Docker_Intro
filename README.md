@@ -174,18 +174,18 @@ We are now ready to begin making our Dockerfile, but before we do so, lets intro
 
 ##### Lets go ahead and pull the rocker version we want (its important to list a version if you want to maintain reproducibility)
 ```
-docker pull rocker/tidyverse:4.0.2
+docker pull rocker/base-r:4.0.2
 ```
 You will see a download slowly occuring... as you pull this image to you local machine
 
 example:
 ```
-4.0.2: Pulling from rocker/tidyverse
+4.0.2: Pulling from rocker/base-r
 
 .....info on layers here.....
 
-Status: Downloaded newer image for rocker/tidyverse:4.0.2
-docker.io/rocker/tidyverse:4.0.2
+Status: Downloaded newer image for rocker/base-r:4.0.2
+docker.io/rocker/base-r:4.0.2
 ```
 
 Now, check your docker images:
@@ -202,16 +202,11 @@ rocker/tidyverse
 
 ## 5. Create a Dockerfile and Build a Docker Image
 
-We are now ready to build our Dockerfile using the base rocker/tidyverse image.
+We are now ready to build our Dockerfile using the base rocker/base-r image.
+
 
 ##### A litte background on this image:
-"This repository provides alternate stack to r-base, with an emphasis on reproducibility. Compared to those images, this stack:  
-&nbsp; 
--builds on debian stable (debian:jessie for versions < 3.4.0, debian:stretch after, etc) release instead of debian:testing, so no more apt-get breaking when debian:testing repos are updated and you had to muck with -t unstable to get apt-get to work.  
--Further, this stack installs a fixed version of R itself from source, rather than whatever is already packaged for Debian (the r-base stack gets the latest R version as a binary from debian:unstable),
-and it installs all R packages from a fixed snapshot of CRAN at a given date (MRAN repos).  
--provides images that are generally smaller than the r-base series. 
--Users should include the version tag, e.g. rocker/verse:3.3.1 when reproduciblity is paramount, and use the default latest tag, e.g. rocker/verse for the most up-to-date R packages. All images still receive any Debian security patch updates. Note that any debian packages on these images (C libraries, compilers, etc) will likely be older/earlier versions than those found on the r-base image series."  
+"The r-base Dockerfile from the Rocker Project provides the basic building block upon many other containers from the Rocker project are built."  
 &nbsp; 
 
 Go to your text editor, and open up your Dockerfile, its time to set it up!
@@ -220,20 +215,13 @@ vi Dockerfile
 ```
 
 ```
-FROM rocker/tidyverse:4.0.2
+FROM rocker/base-r:4.0.2
 #R version 4.0.2
 LABEL software.name="My First Docker Test"
 LABEL software.version="v1.0"
 LABEL software.description="Running tSNE analysis on iris data"
 LABEL container.base.image="debian"
 LABEL tags="Docker Test with R/rocker"
-
-#Install necessary tools onto debian system
-RUN apt-get update && apt-get install -y\
-  apt-utils \
-  vim \
-  less \
-
 
 ```
 
@@ -246,7 +234,7 @@ docker build --tag docker_test .
 
 ## 6. Running our Docker Image: interactive and scripted runs
 
-### ENTRYPOINT in and test out R environment (tidyverse base image)
+### ENTRYPOINT in and test out R environment 
 #### To test your docker container interactively, run the following command (alternatively you can use the image number instead of tagged name):
 
 ```
@@ -257,22 +245,24 @@ Upon running this command, you will want to begin an R session, by typing in "R"
 R
 ``` 
 ```
-library("ggplot2")
+R.Version()
 ```
-If your Docker Image was built successfully, this should run in an interactive R session and should allow you to perform any normal R functionalities within the container.
+If your Docker Image was built successfully, this should run in an interactive R session and should allow you to perform any normal R functionalities within the container. Note, we have not yet installed any packages, this will just be base R.
 
-To exit the r session and then the docker container:
+To exit the r session:
 
 ```
 quit()
-
+```
+and then the docker container:
+```
 exit
 ```
 
 Our container is built and we have successfully tested R within an interactive session. It is now time to add a few lines to our Dockerfile to install required packages and to copy our script over to our container (Remember, the container is a completely insulated machine, it really won't be talking to our local machine while running, so we have to give it the files it needs to access)
 
 ```
-FROM rocker/tidyverse:4.0.2
+FROM rocker/r-base:4.0.2
 #R version 4.0.2
 LABEL software.name="My First Docker Test"
 LABEL software.version="v1.0"
@@ -280,28 +270,22 @@ LABEL software.description="Running tSNE analysis on iris data"
 LABEL container.base.image="debian"
 LABEL tags="Docker Test with R/rocker"
 
-#Install necessary tools onto debian system
-RUN apt-get update && apt-get install -y\
-  apt-utils \
-  vim \
-  less \
-
 
 ##Install necessary R packages needed for tSNE generation
-RUN R -e "install.packages('Rtsne')
+RUN R -e "install.packages(c('Rtsne', 'ggplot2'))"
 
 #Copy Rscript over to container
-COPY Test_Script/ /home/Test_Script/
+COPY Test_Script/Generate_tSNE.R /home/analysis/Generate_tSNE.R
 
 #Run the Rscript
-CMD cd /home/analysis \
-  && R -e "source('Generate_tSNE.R')" \
-  && mv /home/analysis/test_tSNE.png /home/results/test_tSNE.png
+RUN Rscript /home/analysis/Generate_tSNE.R
+```
+
 
 mkdir ~/mydocker/results 
 docker run -v ~/mydocker/results:/home/results  analysis 
 
-```
+
 
 
 https://colinfay.me/docker-r-reproducibility/
