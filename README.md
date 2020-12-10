@@ -294,22 +294,15 @@ RUN R -e "install.packages('Rtsne')
 COPY Test_Script/ Test_Script/
 
 #Run the Rscript
-RUN Rscript Test_Script/Generate_tSNE.R
+CMD cd /home/analysis \
+  && R -e "source('myscript.R')" \
+  && mv /home/analysis/p.csv /home/results/p.csv
 
 ```
 
 
 
 Export container content
-One thing to do now: you want to access what is created by your analysis (here p.csv) outside your container ; i.e, on the host. Because yes, as for now, everything that happens in the container stays in the container. So what we need is to make the docker container share a folder with the host. For this, we’ll use what is called Volume, which are (roughly speaking), a way to tell the Docker container to use a folder from the host as a folder inside the container.
-
-That way, everything that will be created in the folder by the container will persist after the container is turned off. To do this, we’ll use the -v flag when running the container, with path/from/host:/path/in/container. Also, create a folder to receive the results in both :
-
-FROM rocker/r-ver:3.4.4
-
-ARG WHEN
-
-RUN mkdir /home/analysis
 
 RUN R -e "options(repos = \
   list(CRAN = 'http://mran.revolutionanalytics.com/snapshot/${WHEN}')); \
@@ -326,8 +319,7 @@ docker run -v ~/mydocker/results:/home/results  analysis
 Wait for the computation to be done, and…
 
 ls ~/mydocker/results  
-p.csv
-🤘
+
 
 
 
