@@ -363,5 +363,5 @@ So at this point you might think is pretty cool, but maybe it doesn't seem *over
 ![serverless](Docs/1_3BTBz6dXPkYnNI7-sTBWJw.png) 
 image from https://towardsdatascience.com/how-to-implement-a-serverless-batch-job-architecture-on-aws-b3358cd33428
 
-It is now common practive to use Docker is most large workflows, and it fits *really* well into automated and modular workflows.
+It is now common practice to use Docker is most large workflows, and it fits *really* well into automated and modular workflows.
 
