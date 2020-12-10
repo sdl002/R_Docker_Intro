@@ -16,6 +16,8 @@
 ### 4. Pulling from Docker Hub (Rocker)
 ### 5. Create a Dockerfile and Build a Docker Image
 ### 6. Running our Docker Image: interactive and scripted runs
+### 7. Copying Data out of a running Docker container to your host machine
+### 8. How all of this gets 10 times cooler with serverless technology!
 
 &nbsp;  
 &nbsp;  
@@ -261,6 +263,8 @@ exit
 
 Our container is built and we have successfully tested R within an interactive session. It is now time to add a few lines to our Dockerfile to install required packages and to copy our script over to our container (Remember, the container is a completely insulated machine, it really won't be talking to our local machine while running, so we have to give it the files it needs to access)
 
+## WARNING: R must be compiled, this step will take at least 5 minutes! However, we will discuss the cache process and how to optimize your code to reduce time spent recompiling after each change
+
 ```
 FROM rocker/r-base:4.0.2
 #R version 4.0.2
@@ -280,30 +284,60 @@ COPY Test_Script/Generate_tSNE.R /home/analysis/Generate_tSNE.R
 #Run the Rscript
 RUN Rscript /home/analysis/Generate_tSNE.R
 ```
+&nbsp;  
+&nbsp;
+## 7. Copying Data out of a running Docker container to your host machine
+
+Now lets run our container, and then copy the data from the container to our host machine.
+
+1. Run the container in the background, start the container up with a name like temp-container:
+```
+docker run -d --name temp-container docker_test:latest tail -f /dev/null
+```
+* We added '-f /dev/null' to the command to prevent the Docker container from shutting down immediately  
+
+2. Now that our container is running, lets copy from it into our current directory:
+```
+docker container cp temp-container:/home/analysis/ .
+```
+3. Lets go ahead and kill and remove that running container now:
+```
+docker kill temp-container
+docker rm temp-container
+```
 
 
-mkdir ~/mydocker/results 
-docker run -v ~/mydocker/results:/home/results  analysis 
+### A few useful docker commands to remember:
 
+#### Check for Docker images
+```
+docker images
+```
 
+#### Check for running containers
+```
+docker container ls
+```
 
+#### Kill a running container (then rm it)
+```
+docker kill "container name"
+```
+```
+docker rm "container name"
+```
 
-https://colinfay.me/docker-r-reproducibility/
+#### Delete all running and stopped containers
+```
+docker container rm -f $(docker ps -aq)
+```
 
-ls ~/mydocker/results
+#### Pull an image from a registry 
+```
+docker pull "image name"
+```
 
-
-Export container content
-
-
-
-Wait for the computation to be done, and…
-
-ls ~/mydocker/results  
-
-
-
-
-
-
-
+#### Build an image from the Dockerfile in the current directory and tag the image
+```
+docker build -t "myimage:1.0" .
+```
