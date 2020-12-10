@@ -284,6 +284,13 @@ COPY Test_Script/Generate_tSNE.R /home/analysis/Generate_tSNE.R
 #Run the Rscript
 RUN Rscript /home/analysis/Generate_tSNE.R
 ```
+
+Once you have your Dockerfile saved, from the same level as the Dockerfile, build your updated image, this step can take some time.
+
+```
+docker build --tag docker_test .
+```
+
 &nbsp;  
 &nbsp;
 ## 7. Copying Data out of a running Docker container to your host machine
