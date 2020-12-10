@@ -207,7 +207,7 @@ rocker/base-r
 We are now ready to build our Dockerfile using the base rocker/base-r image.
 
 
-##### A litte background on this image:
+##### A little background on this image:
 "The r-base Dockerfile from the Rocker Project provides the basic building block upon many other containers from the Rocker project are built."  
 &nbsp; 
 
