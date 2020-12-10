@@ -172,7 +172,7 @@ We are now ready to begin making our Dockerfile, but before we do so, lets intro
 
 ### Check out Docker hub (Rocker) https://hub.docker.com/u/rocker
 
-![rocker_screenshot](/Docs/ROCKER_DockerHub.png)  
+![rocker_screenshot](Docs/rocker_base_screenshot.png)  
 
 ##### Lets go ahead and pull the rocker version we want (its important to list a version if you want to maintain reproducibility)
 ```
