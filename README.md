@@ -291,31 +291,28 @@ RUN apt-get update && apt-get install -y\
 RUN R -e "install.packages('Rtsne')
 
 #Copy Rscript over to container
-COPY Test_Script/ Test_Script/
+COPY Test_Script/ /home/Test_Script/
 
 #Run the Rscript
 CMD cd /home/analysis \
-  && R -e "source('myscript.R')" \
-  && mv /home/analysis/p.csv /home/results/p.csv
+  && R -e "source('Generate_tSNE.R')" \
+  && mv /home/analysis/test_tSNE.png /home/results/test_tSNE.png
+
+mkdir ~/mydocker/results 
+docker run -v ~/mydocker/results:/home/results  analysis 
 
 ```
 
 
+https://colinfay.me/docker-r-reproducibility/
+
+ls ~/mydocker/results
+
 
 Export container content
 
-RUN R -e "options(repos = \
-  list(CRAN = 'http://mran.revolutionanalytics.com/snapshot/${WHEN}')); \
-  install.packages('tidystringdist')"
 
-COPY myscript.R /home/analysis/myscript.R
 
-CMD cd /home/analysis \
-  && R -e "source('myscript.R')" \
-  && mv /home/analysis/p.csv /home/results/p.csv
-
-mkdir ~/mydocker/results 
-docker run -v ~/mydocker/results:/home/results  analysis 
 Wait for the computation to be done, and…
 
 ls ~/mydocker/results  
