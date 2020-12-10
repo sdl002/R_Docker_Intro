@@ -208,7 +208,7 @@ rocker/base-r
 <a name="anchor5"></a>
 ## 5. Create a Dockerfile and Build a Docker Image
 
-We are now ready to build our Dockerfile using the base rocker/base-r image.
+We are now ready to build our Dockerfile using the base rocker/r-base image.
 
 
 ##### A little background on this image:
@@ -221,7 +221,7 @@ vi Dockerfile
 ```
 
 ```
-FROM rocker/base-r:4.0.2
+FROM rocker/r-base:4.0.2
 #R version 4.0.2
 LABEL software.name="My First Docker Test"
 LABEL software.version="v1.0"
