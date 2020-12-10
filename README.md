@@ -268,3 +268,69 @@ quit()
 
 exit
 ```
+
+Our container is built and we have successfully tested R within an interactive session. It is now time to add a few lines to our Dockerfile to install required packages and to copy our script over to our container (Remember, the container is a completely insulated machine, it really won't be talking to our local machine while running, so we have to give it the files it needs to access)
+
+```
+FROM rocker/tidyverse:4.0.2
+#R version 4.0.2
+LABEL software.name="My First Docker Test"
+LABEL software.version="v1.0"
+LABEL software.description="Running tSNE analysis on iris data"
+LABEL container.base.image="debian"
+LABEL tags="Docker Test with R/rocker"
+
+#Install necessary tools onto debian system
+RUN apt-get update && apt-get install -y\
+  apt-utils \
+  vim \
+  less \
+
+
+##Install necessary R packages needed for tSNE generation
+RUN R -e "install.packages('Rtsne')
+
+#Copy Rscript over to container
+COPY Test_Script/ Test_Script/
+
+#Run the Rscript
+RUN Rscript Test_Script/Generate_tSNE.R
+
+```
+
+
+
+Export container content
+One thing to do now: you want to access what is created by your analysis (here p.csv) outside your container ; i.e, on the host. Because yes, as for now, everything that happens in the container stays in the container. So what we need is to make the docker container share a folder with the host. For this, we’ll use what is called Volume, which are (roughly speaking), a way to tell the Docker container to use a folder from the host as a folder inside the container.
+
+That way, everything that will be created in the folder by the container will persist after the container is turned off. To do this, we’ll use the -v flag when running the container, with path/from/host:/path/in/container. Also, create a folder to receive the results in both :
+
+FROM rocker/r-ver:3.4.4
+
+ARG WHEN
+
+RUN mkdir /home/analysis
+
+RUN R -e "options(repos = \
+  list(CRAN = 'http://mran.revolutionanalytics.com/snapshot/${WHEN}')); \
+  install.packages('tidystringdist')"
+
+COPY myscript.R /home/analysis/myscript.R
+
+CMD cd /home/analysis \
+  && R -e "source('myscript.R')" \
+  && mv /home/analysis/p.csv /home/results/p.csv
+
+mkdir ~/mydocker/results 
+docker run -v ~/mydocker/results:/home/results  analysis 
+Wait for the computation to be done, and…
+
+ls ~/mydocker/results  
+p.csv
+🤘
+
+
+
+
+
+
