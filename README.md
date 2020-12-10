@@ -11,13 +11,13 @@
 
 ### We will cover the following focus points:
 ### [1. What is Docker and why should we use it?](#anchor1)
-### 2. Launching Docker Desktop
-### 3. Running Docker via command line
-### 4. Pulling from Docker Hub (Rocker)
-### 5. Create a Dockerfile and Build a Docker Image
-### 6. Running our Docker Image: interactive and scripted runs
-### 7. Copying Data out of a running Docker container to your host machine
-### 8. How all of this gets 10 times cooler with serverless technology!
+### [2. Launching Docker Desktop](#anchor2)
+### [3. Running Docker via command line](#anchor3)
+### [4. Pulling from Docker Hub (Rocker)](#anchor4)
+### [5. Create a Dockerfile and Build a Docker Image](#anchor5)
+### [6. Running our Docker Image: interactive and scripted runs](#anchor6)
+### [7. Copying Data out of a running Docker container to your host machine](#anchor7)
+### [8. How all of this gets 10 times cooler with serverless technology!](#anchor8)
 
 &nbsp;  
 &nbsp;  
@@ -70,6 +70,7 @@ An image is a read-only template with instructions for creating a Docker conta
 A container is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI. You can connect a container to one or more networks, attach storage to it, or even create a new image based on its current state.  
 &nbsp;    
 &nbsp;  
+<a name="anchor2"></a>
 # 2. Launching Docker Desktop
 
 #### Begin by installing Docker Desktop:
@@ -99,6 +100,7 @@ Disk image location: Specify the location of the Linux volume where containers a
 You can also move the disk image to a different location. If you attempt to move a disk image to a location that already has one, you get a prompt asking if you want to use the existing image or replace it.  
 &nbsp;  
 &nbsp;  
+<a name="anchor3"></a>
 ## 3. Running Docker via command line
 
 To ensure you have Docker properly installed, using the command line interface (CLI) run
@@ -169,6 +171,7 @@ We are now ready to begin making our Dockerfile, but before we do so, lets intro
 
 &nbsp;  
 &nbsp;  
+<a name="anchor4"></a>
 ## 4. Pulling from Docker Hub (rocker)
 
 ### Check out Docker hub (rocker) https://hub.docker.com/u/rocker
@@ -202,7 +205,7 @@ rocker/base-r
 
 &nbsp;  
 &nbsp;  
-
+<a name="anchor5"></a>
 ## 5. Create a Dockerfile and Build a Docker Image
 
 We are now ready to build our Dockerfile using the base rocker/base-r image.
@@ -234,7 +237,7 @@ docker build --tag docker_test .
 ```
 &nbsp;  
 &nbsp;  
-
+<a name="anchor6"></a>
 ## 6. Running our Docker Image: interactive and scripted runs
 
 ### ENTRYPOINT in and test out R environment 
@@ -294,6 +297,7 @@ docker build --tag docker_test .
 
 &nbsp;  
 &nbsp;
+<a name="anchor7"></a>
 ## 7. Copying Data out of a running Docker container to your host machine
 
 Now lets run our container, and then copy the data from the container to our host machine.
@@ -351,6 +355,7 @@ docker build -t "myimage:1.0" .
 ```
 &nbsp;  
 &nbsp;
+<a name="anchor8"></a>
 ## 8. How all of this gets 10 times cooler with serverless technology!
 
 So at this point you might this is pretty cool, but not overly useful. Where this get more exciting is how this can be used to fit into modular work flows and easily read/write from cloud storage like AWS S3 buckets and Aurora PostgreSQL databases. 
