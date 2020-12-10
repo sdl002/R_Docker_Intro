@@ -242,7 +242,7 @@ docker build --tag docker_test .
 ```
 docker run --entrypoint /bin/bash -i -t docker_test:latest
 ```
-Upon running this command, you will want to begin an R session, by typing in "R" on the command line. Becuase tidyverse is already installed, you can test this out by using the library function:
+Upon running this command, you will can begin an R session by typing in "R" on the command line. Becuase R is already installed, you can check the R version once you have entered interactive R:
 ```
 R
 ``` 
