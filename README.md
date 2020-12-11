@@ -180,13 +180,13 @@ We are now ready to begin making our Dockerfile, but before we do so, lets intro
 
 ##### Lets go ahead and pull the rocker version we want (its important to list a version if you want to maintain reproducibility)
 ```
-docker pull rocker/base-r:4.0.2
+docker pull rocker/r-base:4.0.2
 ```
 You will see a download slowly occuring... as you pull this image to you local machine
 
 example:
 ```
-4.0.2: Pulling from rocker/base-r
+4.0.2: Pulling from rocker/r-base
 
 .....info on layers here.....
 
