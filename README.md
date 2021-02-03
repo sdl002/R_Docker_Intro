@@ -38,7 +38,7 @@ Responsive deployment and scaling
 Photo from https://www.softserveinc.com/en-us/blog/security-containers-vs-virtual-machines  
   
   
-## Container != VMs
+## Containers =/= VMs
 #### Docker container PROS:
 More lightweight, start much faster, and use a fraction of the memory compared to booting an entire OS  
 Applications that are running on containers are completely segregated and isolated from each other  
