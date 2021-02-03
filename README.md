@@ -56,7 +56,7 @@ To get started, lets discuss some of the major benefits to using Docker with you
 A question that a lot of people have...  
 ### Is using a container the same as using a virtual machine (VM)?
 ![vm_vs_container](/Docs/vm_vs_container.png)  
-Photo from https://www.softserveinc.com/en-us/blog/security-containers-vs-virtual-machines  
+[Photo cred](https://www.softserveinc.com/en-us/blog/security-containers-vs-virtual-machines)
   
   
 ## Containers =/= VMs
@@ -107,7 +107,7 @@ My docker desktop version is 2.5.0.1
 Please note the Advanced Preferences where you can select CPUs and Memory (this is important if you do not have enough resources when building your image, as it will fail if you surpass the default setting)  
 ![advanced_preferences](/Docs/advanced_prefereces.png)  
 
-Info from https://docs.docker.com/docker-for-mac/  
+[More Info](https://docs.docker.com/docker-for-mac/)  
 CPUs: By default, Docker Desktop is set to use half the number of processors available on the host machine. To increase processing power, set this to a higher number; to decrease, lower the number.  
 
 Memory: By default, Docker Desktop is set to use 2 GB runtime memory, allocated from the total available memory on your Mac. To increase the RAM, set this to a higher number. To decrease it, lower the number.  
