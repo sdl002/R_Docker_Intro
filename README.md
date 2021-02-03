@@ -9,7 +9,7 @@
 
 ![Docker_gif](/Docs/Cute_Docker.gif)
 
-This interactive tutorial will introduce participants to the world of Docker and will underscore the reasons why Docker is an integral tool for anyone aiming to make their code more reproducible and shareable, and will also explain why it is essential when sharing to users in outside environments. We will learn how to launch Docker, check for images on our local systems, push and pull from Docker Hub, create a basic Dockerfile, and finally use it to run an Rscript. Before the presentation, please install Docker by following the instructions for mac, linux, or windows, I will be presenting from my Mac, so I will be using Mac Docker Desktop. Users should also create a free account with Docker Hub. 
+This interactive tutorial will introduce participants to the world of Docker and will underscore the reasons why Docker is an integral tool for anyone aiming to make their code more reproducible and shareable, and will also explain why it is essential when sharing to users in outside environments. We will learn how to launch Docker, check for images on our local systems, push and pull from Docker Hub, create a basic Dockerfile, and finally use it to run an Rscript. Before the presentation, please install Docker by following the instructions for mac, linux, or windows, I will be presenting from my Mac, so I will be using Mac Docker Desktop. Users should also create a free account with Docker Hub (https://hub.docker.com/).
 
 ### We will cover the following focus points:
 ### [1. What is Docker and why should we use it?](#anchor1)
