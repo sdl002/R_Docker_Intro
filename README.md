@@ -19,7 +19,7 @@ This interactive tutorial will introduce participants to the world of Docker and
 ### [1.  What is Docker and why should we use it?](#anchor1)
 ### [2.  Launching Docker Desktop](#anchor2)
 ### [3.  Running Docker via command line](#anchor3)
-### [4.  Pulling from Docker Hub (Rocker)](#anchor4)
+### [4.  Pulling from Docker Hub (Rocker and friends!)](#anchor4)
 ### [5.  Create a Dockerfile and Build a Docker Image](#anchor5)
 ### [6.  Running our Docker Image: interactive and scripted runs](#anchor6)
 ### [7.  Copying Data out of a running Docker container to your host machine](#anchor7)
@@ -79,7 +79,7 @@ A container is a runnable instance of an image. You can create, start, stop, mov
 <a name="anchor2"></a>
 # 2. Launching Docker Desktop
 
-#### Begin by installing Docker Desktop:
+#### Everyone should already have done this, but just a reminder to begin by installing Docker Desktop:
 - mac (https://docs.docker.com/mac/step_one/)  
 - linux (https://docs.docker.com/linux/step_one/)   
 - windows (https://docs.docker.com/get-started/)  
