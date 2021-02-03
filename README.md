@@ -3,8 +3,8 @@
 # Harmonizing Docker and R 
 
 #### Stephanie LaHaye, PhD
-###### R-Ladies Columbus  
-###### Thursday December 10, 2020
+##### WIA Summit Tutorial
+##### Wednesday February 10, 2020
 &nbsp;  
 
 ![Docker_gif](/Docs/Cute_Docker.gif)
