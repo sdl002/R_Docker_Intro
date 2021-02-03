@@ -51,7 +51,9 @@ To get started, lets discuss some of the major benefits to using Docker with you
 4. Self contained  
 5. Responsive deployment and scaling  
 &nbsp;  
+&nbsp;
 
+A question that a lot of people have...  
 ### Is using a container the same as using a virtual machine (VM)?
 ![vm_vs_container](/Docs/vm_vs_container.png)  
 Photo from https://www.softserveinc.com/en-us/blog/security-containers-vs-virtual-machines  
