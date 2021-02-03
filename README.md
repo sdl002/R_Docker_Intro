@@ -42,7 +42,7 @@ Docker Docs provides excellent documentation for almost any question you might h
 &nbsp;  
 
 
-To get started, lets discuss some of the major benefits to using Docker with your code/pipeline.
+###### To get started, lets discuss some of the major benefits to using Docker with your code/pipeline.
 
 #### Benefits of Docker:
 1. Provides ability to package and run application in a container  
@@ -53,7 +53,7 @@ To get started, lets discuss some of the major benefits to using Docker with you
 &nbsp;  
 &nbsp;
 
-A question that a lot of people have...  
+###### A question that a lot of people have...  
 ### Is using a container the same as using a virtual machine (VM)?
 ![vm_vs_container](/Docs/vm_vs_container.png)  
 [Photo cred](https://www.softserveinc.com/en-us/blog/security-containers-vs-virtual-machines)
@@ -65,7 +65,7 @@ Have a consistent environment (reproducible) and shareable to outside environmen
 Easy to maintain versioning and updates (i.e. CodeCommit/CodePipeline in AWS)  
 
 &nbsp;
-#### Let's talk architecture...
+###### Let's talk architecture...
 ## Breakdown of basic Docker Architecture and Objects
 
 ![basic_info](/Docs/Docker_Basic.png)  
