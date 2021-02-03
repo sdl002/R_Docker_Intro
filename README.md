@@ -32,8 +32,9 @@ This interactive tutorial will introduce participants to the world of Docker and
 
 <a name="anchor1"></a>
 # 1. What is Docker and why should we use it?
+&nbsp;    
 <img src="/Docs/docker_static.png" width="150">    
-&nbsp;     
+
 
 #### “Docker is an open platform for developing, shipping, and running applications.” - [link to Docker Getting Started](https://docs.docker.com/get-started/)  
 Docker Provides the following benefits:  
