@@ -58,8 +58,9 @@ A question that a lot of people have...
 ![vm_vs_container](/Docs/vm_vs_container.png)  
 [Photo cred](https://www.softserveinc.com/en-us/blog/security-containers-vs-virtual-machines)
   
-  
-## Containers =/= VMs
+&nbsp;
+&nbsp;
+## So now we know... Containers =/= VMs
 #### Docker container PROS:
 More lightweight, start much faster, and use a fraction of the memory compared to booting an entire OS  
 Applications that are running on containers are completely segregated and isolated from each other  
