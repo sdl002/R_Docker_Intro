@@ -35,8 +35,7 @@ This interactive tutorial will introduce participants to the world of Docker and
 &nbsp;    
 <img src="/Docs/docker_static.png" width="150">    
 
-#### “Docker is an open platform for developing, shipping, and running applications.” - [Docker Getting Started](https://docs.docker.com/get-started/)  
-##### Docker has excellent documentation for almost any question you might have at [Docker Docs](https://docs.docker.com/), which I will reference often. 
+#### “Docker is an open platform for developing, shipping, and running applications.” Docker has excellent documentation for almost any question you might have at [Docker Docs](https://docs.docker.com/), which I will reference often. 
 
 Docker Provides the following benefits:  
 Provides ability to package and run application in a container  
