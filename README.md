@@ -8,7 +8,7 @@
 &nbsp;  
 
 
-<img src="/Docs/Cute_Docker.gif" width="500">
+<img src="/Docs/Cute_Docker.gif" width="500">  
 ### Before we begin, a quit intro on what we will cover:  
 This interactive tutorial will introduce participants to the world of Docker and will underscore the reasons why Docker is an integral tool for anyone aiming to make their code more reproducible and shareable, and will also explain why it is essential when sharing to users in outside environments. We will learn how to launch Docker, check for images on our local systems, push and pull from Docker Hub, create a basic Dockerfile, and finally use it to run an Rscript. Before the presentation, please install Docker by following the instructions for [mac](https://docs.docker.com/docker-for-mac/install/), [linux](https://docs.docker.com/get-started/), or [windows](https://docs.docker.com/docker-for-windows/install/). I will be presenting from my Mac, so I will be using Mac Docker Desktop. Participants should also create a free account with [Docker Hub](https://hub.docker.com/) before begining the tutorial.
 
