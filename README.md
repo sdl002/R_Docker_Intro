@@ -197,7 +197,7 @@ example:
 .....info on layers here.....
 
 Status: Downloaded newer image for rocker/base-r:4.0.2
-docker.io/rocker/base-r:4.0.2
+docker.io/rocker/r-base:4.0.2
 ```
 
 Now, check your docker images:
@@ -206,7 +206,7 @@ docker images
 ```
 You should see a line that starts with (under the headers):
 ```
-rocker/base-r
+rocker/r-base
 ```
 
 &nbsp;  
