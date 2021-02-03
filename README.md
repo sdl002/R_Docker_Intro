@@ -57,16 +57,16 @@ A question that a lot of people have...
 ### Is using a container the same as using a virtual machine (VM)?
 ![vm_vs_container](/Docs/vm_vs_container.png)  
 [Photo cred](https://www.softserveinc.com/en-us/blog/security-containers-vs-virtual-machines)
-  
+### So now we know... Containers =/= VMs
 &nbsp;
-&nbsp;
-## So now we know... Containers =/= VMs
-#### Docker container PROS:
+#### Docker container vs. VMs
 More lightweight, start much faster, and use a fraction of the memory compared to booting an entire OS  
 Applications that are running on containers are completely segregated and isolated from each other  
 Have a consistent environment (reproducible) and shareable to outside environments  
 Easy to maintain versioning and updates (i.e. CodeCommit/CodePipeline in AWS)  
 
+&nbsp;
+###### Let's talk architecture...
 ## Breakdown of basic Docker Architecture and Objects
 
 ![basic_info](/Docs/Docker_Basic.png)  
