@@ -83,7 +83,7 @@ My docker desktop version is 2.5.0.1
 ![basic_info_screenshot](/Docs/Docker_Desktop_screenshot.png)  
 
 &nbsp;  
-Please note the Advanced Preferences where you can select CPUs and Memory (this is important if you do not have enough resources when building your image, as it will fail)  
+Please note the Advanced Preferences where you can select CPUs and Memory (this is important if you do not have enough resources when building your image, as it will fail if you surpass the default setting)  
 ![advanced_preferences](/Docs/advanced_prefereces.png)  
 
 Info from https://docs.docker.com/docker-for-mac/  
@@ -107,7 +107,7 @@ To ensure you have Docker properly installed, using the command line interface (
 ```
 docker
 ```
-You should see this (plus more, but reducing for this example):
+You should see this output (plus more, but reducing for this example):
 ```
 Usage:	docker [OPTIONS] COMMAND
 
@@ -147,7 +147,7 @@ In response, you will see Repo IDs and info about your images (See headers below
 REPOSITORY      TAG     IMAGE ID      CREATED     SIZE
 ```
 
-## Now lets start by making a very basic Dockerfile and directory structure 
+## Lets get started by making a very basic Dockerfile and directory structure 
 ```
 mkdir Docker_Test
 cd Docker_Test
@@ -158,7 +158,7 @@ cd Test_Script
 
 Now either download the Rscript: /R_Docker_Intro/Example_Data/Generate_tSNE.R
 *-or-*
-use vim and copy/past text from /R_Docker_Intro/Example_Data/Generate_tSNE.R to a new file called Generate_tSNE.R  
+use vim/nano/etc and copy/past text from /R_Docker_Intro/Example_Data/Generate_tSNE.R to a new file called Generate_tSNE.R  
 
 Your directory structure should now look like this:
 ```
