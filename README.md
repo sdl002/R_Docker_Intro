@@ -36,7 +36,7 @@ This interactive tutorial will introduce participants to the world of Docker and
 <img src="/Docs/docker_static.png" width="150">    
 
 #### “Docker is an open platform for developing, shipping, and running applications.” - [Docker Docs](https://docs.docker.com/).
-Docker Docs provides excellent documentation for almost any question you might have about Docker. 
+Docker Docs provides excellent documentation for almost any question you might have about Docker. We will refer back to Docker Docs often, and it is a great place to start reading as you being your Docker utilization journey!
 
 &nbsp;  
 &nbsp;  
