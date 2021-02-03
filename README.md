@@ -1,7 +1,6 @@
 # R_Docker_Intro
 
-# Intro to Docker: 
-## How Containerized Workflows Facilitate Reproducible and Shareable Code 
+# Intro to Docker: How Containerized Workflows Facilitate Reproducible and Shareable Code 
 
 #### Stephanie LaHaye, PhD
 ##### WIA Summit Tutorial
