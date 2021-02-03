@@ -12,14 +12,14 @@
 This interactive tutorial will introduce participants to the world of Docker and will underscore the reasons why Docker is an integral tool for anyone aiming to make their code more reproducible and shareable, and will also explain why it is essential when sharing to users in outside environments. We will learn how to launch Docker, check for images on our local systems, push and pull from Docker Hub, create a basic Dockerfile, and finally use it to run an Rscript. Before the presentation, please install Docker by following the instructions for mac, linux, or windows (https://docs.docker.com/desktop/). I will be presenting from my Mac, so I will be using Mac Docker Desktop. Users should also create a free account with Docker Hub (https://hub.docker.com/).
 
 ### We will cover the following focus points:
-### [1. What is Docker and why should we use it?](#anchor1)
-### [2. Launching Docker Desktop](#anchor2)
-### [3. Running Docker via command line](#anchor3)
-### [4. Pulling from Docker Hub (Rocker)](#anchor4)
-### [5. Create a Dockerfile and Build a Docker Image](#anchor5)
-### [6. Running our Docker Image: interactive and scripted runs](#anchor6)
-### [7. Copying Data out of a running Docker container to your host machine](#anchor7)
-### [8. How all of this gets 10 times cooler with serverless technology!](#anchor8)
+### [1.  What is Docker and why should we use it?](#anchor1)
+### [2.  Launching Docker Desktop](#anchor2)
+### [3.  Running Docker via command line](#anchor3)
+### [4.  Pulling from Docker Hub (Rocker)](#anchor4)
+### [5.  Create a Dockerfile and Build a Docker Image](#anchor5)
+### [6.  Running our Docker Image: interactive and scripted runs](#anchor6)
+### [7.  Copying Data out of a running Docker container to your host machine](#anchor7)
+### [8.  How all of this gets 10 times cooler with serverless technology!](#anchor8)
 
 &nbsp;  
 &nbsp;  
