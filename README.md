@@ -69,7 +69,7 @@ Easy to maintain versioning and updates (i.e. CodeCommit/CodePipeline in AWS)
 ## Breakdown of basic Docker Architecture and Objects
 
 ![basic_info](/Docs/Docker_Basic.png)  
-Photo and info below is from https://docs.docker.com/get-started/overview/
+[Photo cred](https://docs.docker.com/get-started/overview/)
 
   
 #### Docker daemon  
