@@ -42,6 +42,8 @@ Docker Docs provides excellent documentation for almost any question you might h
 &nbsp;  
 
 
+To get started, lets discuss some of the major benefits to considering the use of Docker with your code/pipeline.
+
 #### Benefits of Docker:
 1. Provides ability to package and run application in a container  
 2. Containers are lightweight (fast)  
