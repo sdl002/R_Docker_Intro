@@ -36,14 +36,19 @@ This interactive tutorial will introduce participants to the world of Docker and
 <img src="/Docs/docker_static.png" width="150">    
 
 #### “Docker is an open platform for developing, shipping, and running applications.” - [Docker Docs](https://docs.docker.com/).
-(Docker Docs provides excellent documentation for almost any question you might have about Docker). 
+Docker Docs provides excellent documentation for almost any question you might have about Docker. 
 
-Docker Provides the following benefits:  
-Provides ability to package and run application in a container  
-Containers are lightweight (fast)  
-Consistent and reproducible  
-Self contained  
-Responsive deployment and scaling  
+&nbsp;  
+&nbsp;  
+
+
+#### Benefits of Docker:
+1. Provides ability to package and run application in a container  
+2. Containers are lightweight (fast)  
+3. Consistent and reproducible  
+4. Self contained  
+5. Responsive deployment and scaling  
+&nbsp;  
 
 ### Is using a container the same as using a virtual machine (VM)?
 ![vm_vs_container](/Docs/vm_vs_container.png)  
