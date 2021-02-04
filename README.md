@@ -67,10 +67,11 @@ Containers, unlike VMs, are meant to be a way for an entire environment to be pa
 
 ### So now we know... Containers =/= VMs
 #### Docker container vs. VMs
-More lightweight, start much faster, and use a fraction of the memory compared to booting an entire OS  
-Applications that are running on containers are completely segregated and isolated from each other  
-Have a consistent environment (reproducible) and shareable to outside environments  
-Easy to maintain versioning and updates (i.e. CodeCommit/CodePipeline in AWS)  
+##### Why we chose Docker over VM:
+1. Containers are a more lightweight option, they start much faster, and use a fraction of the memory compared to booting an entire OS  
+2. Plays will with microservices (i.e. within an AWS set up, see section 8 below)    
+3. Ability to have a consistent environment (reproducible) and shareable to outside environments (no more dependency issues)
+4. Easy to maintain versioning and updates (i.e. CodeCommit/CodePipeline in AWS)  
 
 &nbsp;
 ###### Let's talk architecture...
