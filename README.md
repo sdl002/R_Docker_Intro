@@ -59,10 +59,10 @@ Docker Docs provides excellent documentation for almost any question you might h
 [Photo cred](https://learn.kumul.us/)
 
 #### What is a VM?
-A VM runs on top of a physical server, and emulates a particular hardware system. A hypervisor (virtual machine monitor) is used to create and run the VM. A hypervisor is required to virtualize the server, and it lives in between the hardware and the VM. VMs are isolated from each other, and each has its own operating system/apps/allocated resources. Can be useful for developers who might want to test different applications on sidderence "virtually set up" machines.
+A VM runs on top of a physical server, and emulates a particular hardware system. A hypervisor (virtual machine monitor) is used to create and run the VM. A hypervisor is required to virtualize the server, and it lives in between the hardware and the VM. VMs are isolated from each other, and each has its own operating system/apps/allocated resources. Can be useful for developers who might want to test different applications on different "virtually set up" machines.
 
 #### So how is that different from a "container"?
-
+Containers, unlike VMs, are meant to be a way for an entire environment to be packaged up in a standardized way (i.e. a shipping container on a sea barge, see the docker logo...). Containers do not have a hypervisor, instead there is an engine that contains the bare minimum environment needed to run the application that is being hosted. It is a way for a developer to develop, test, and deploy code in a way that can ensure the reproducibility of the product in outside environments. A container can be run on a virtual or physical machine.
 
 
 ### So now we know... Containers =/= VMs
