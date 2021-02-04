@@ -57,6 +57,11 @@ Docker Docs provides excellent documentation for almost any question you might h
 ### Is using a container the same as using a virtual machine (VM)?
 ![vm_vs_container](/Docs/vm_vs_container.png)  
 [Photo cred](https://www.softserveinc.com/en-us/blog/security-containers-vs-virtual-machines)
+
+#### What is a VM?
+A VM runs on top of a physical server, and emulates a particular hardware system. A hypervisor (virtual machine monitor) is used to create and run the VM. A hypervisor is required to virtualize the server, and it lives in between the hardware and the VM.
+
+
 ### So now we know... Containers =/= VMs
 #### Docker container vs. VMs
 More lightweight, start much faster, and use a fraction of the memory compared to booting an entire OS  
