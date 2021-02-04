@@ -55,7 +55,7 @@ Docker Docs provides excellent documentation for almost any question you might h
 
 ###### A question that a lot of people have...  
 ### Is using a container the same as using a virtual machine (VM)?
-![vm_vs_container](/Docs/vm_vs_container.png)  
+![vm_vs_container](/Docs/Servers.png)  
 [Photo cred](https://www.softserveinc.com/en-us/blog/security-containers-vs-virtual-machines)
 
 #### What is a VM?
