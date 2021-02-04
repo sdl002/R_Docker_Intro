@@ -63,7 +63,7 @@ A VM runs on top of a physical server, and emulates a particular hardware system
 
 #### So how is that different from a "container"?
 Containers, unlike VMs, are meant to be a way for an entire environment to be packaged up in a standardized way (i.e. a shipping container on a sea barge, see the docker logo...). Containers do not have a hypervisor, instead there is an engine that contains the bare minimum environment needed to run the application that is being hosted. It is a way for a developer to develop, test, and deploy code in a way that can ensure the reproducibility of the product in outside environments. A container can be run on a virtual or physical machine.
-
+&nbsp;  
 
 ### So now we know... Containers =/= VMs
 #### Docker container vs. VMs
