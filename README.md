@@ -367,6 +367,8 @@ Now lets run our container, and then copy the data from the container to our hos
 docker run -d --name temp-container docker_test:latest tail -f /dev/null
 ```
 * We added '-f /dev/null' to the command to prevent the Docker container from shutting down immediately  
+* We added '-d', short for --detach , to run the container in background and print container ID
+
 
 2. Now that our container is running, lets copy from it into our current directory:
 ```
