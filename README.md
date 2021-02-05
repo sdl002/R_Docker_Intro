@@ -330,11 +330,6 @@ COPY Test_Script/Generate_tSNE.R /home/analysis/Generate_tSNE.R
 RUN Rscript /home/analysis/Generate_tSNE.R
 ```
 
-
-### A little info on "cache"
-<img src="/Docs/cache.jpg" width="500">  
-
-
 Once you have your Dockerfile saved, from the same level as the Dockerfile, build your updated image, this step can take some time.
 
 ```
@@ -342,6 +337,14 @@ docker build --tag docker_test .
 ```
 
 &nbsp;  
+### A little info on "cache"
+<img src="/Docs/cache.jpg" width="500">  
+
+Docker will step through the intructions that you have put in your Dockerfile, *in the order they are listed*. While this is happening, Docker is actually checking for an existing image in its cache that it can reuse, *instead of* created a new (duplicate) image.
+
+You can disable cache by using the --no-cache=true option on the docker build command.
+
+
 &nbsp;
 <a name="anchor7"></a>
 ## 7. Copying Data out of a running Docker container to your host machine
