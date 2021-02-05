@@ -356,7 +356,7 @@ You can disable cache by using the --no-cache=true option on the docker build co
 
 * Once the cache is invalidated, *all subsequent Dockerfile commands generate new images and the cache is not used.*
 
-### The layers that are changed most frequently should be created last
+### The layers that are changed most frequently should be last
 
 &nbsp;
 <a name="anchor7"></a>
