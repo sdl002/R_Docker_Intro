@@ -356,6 +356,8 @@ You can disable cache by using the --no-cache=true option on the docker build co
 
 * Once the cache is invalidated, *all subsequent Dockerfile commands generate new images and the cache is not used.*
 
+### The layers that are changed most frequently should be created last
+
 &nbsp;
 <a name="anchor7"></a>
 ## 7. Copying Data out of a running Docker container to your host machine
