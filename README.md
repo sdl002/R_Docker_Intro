@@ -274,6 +274,11 @@ docker build -t docker_test .
 
 &nbsp;  
 &nbsp;  
+
+### A little info on "cache"
+
+
+
 <a name="anchor6"></a>
 ## 6. Running our Docker Image: interactive and scripted runs
 
