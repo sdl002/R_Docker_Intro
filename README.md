@@ -379,40 +379,7 @@ docker rm temp-container
 ```
 
 
-## A few useful docker commands to remember:
 
-#### Check for Docker images
-```
-docker images
-```
-
-#### Check for running containers
-```
-docker container ls
-```
-
-#### Kill a running container (then rm it)
-```
-docker kill "container name"
-```
-```
-docker rm "container name"
-```
-
-#### Delete all running and stopped containers
-```
-docker container rm -f $(docker ps -aq)
-```
-
-#### Pull an image from a registry 
-```
-docker pull "image name"
-```
-
-#### Build an image from the Dockerfile in the current directory and tag the image
-```
-docker build -t "myimage:1.0" .
-```
 &nbsp;  
 &nbsp;
 
@@ -447,3 +414,38 @@ image from https://towardsdatascience.com/how-to-implement-a-serverless-batch-jo
 
 It is now common practice to use Docker is most large workflows, and it fits *really* well into automated and modular workflows.
 
+
+# Bonus: A few useful docker commands to remember
+
+#### Check for Docker images
+```
+docker images
+```
+
+#### Check for running containers
+```
+docker container ls
+```
+
+#### Kill a running container (then rm it)
+```
+docker kill "container name"
+```
+```
+docker rm "container name"
+```
+
+#### Delete all running and stopped containers
+```
+docker container rm -f $(docker ps -aq)
+```
+
+#### Pull an image from a registry 
+```
+docker pull "image name"
+```
+
+#### Build an image from the Dockerfile in the current directory and tag the image
+```
+docker build -t "myimage:1.0" .
+```
