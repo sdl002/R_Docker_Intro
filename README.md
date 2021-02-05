@@ -420,7 +420,7 @@ It is now common practice to use Docker is most large workflows, and it fits *re
 # Bonus: A few useful docker commands to remember
 <img src="/Docs/Bonus1.jpg" width="500">   
 
-&nbsp;
+
   
 #### Check for Docker images
 ```
