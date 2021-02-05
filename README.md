@@ -414,6 +414,8 @@ image from https://towardsdatascience.com/how-to-implement-a-serverless-batch-jo
 
 It is now common practice to use Docker is most large workflows, and it fits *really* well into automated and modular workflows.
 
+&nbsp;  
+&nbsp;
 
 # Bonus: A few useful docker commands to remember
 
