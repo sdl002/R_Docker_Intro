@@ -276,7 +276,7 @@ docker build -t docker_test .
 &nbsp;  
 
 ### A little info on "cache"
-
+<img src="/Docs/cache.jpeg" width="500">  
 
 
 <a name="anchor6"></a>
