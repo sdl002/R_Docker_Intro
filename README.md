@@ -275,10 +275,6 @@ docker build -t docker_test .
 &nbsp;  
 &nbsp;  
 
-### A little info on "cache"
-<img src="/Docs/cache.jpeg" width="500">  
-
-
 <a name="anchor6"></a>
 ## 6. Running our Docker Image: interactive and scripted runs
 
@@ -312,7 +308,7 @@ exit
 
 Our container is built and we have successfully tested R within an interactive session. It is now time to add a few lines to our Dockerfile to install required packages and to copy our script over to our container (Remember, the container is a completely insulated machine, it really won't be talking to our local machine while running, so we have to give it the files it needs to access)
 
-## WARNING: R must be compiled, this step will take ~5 minutes! However, we will discuss the cache process and how to optimize your code to reduce time spent recompiling after each change
+## WARNING: R must be compiled, this step can take a few minutes! However, we will discuss the cache process and how to optimize your code to reduce time spent recompiling after each change
 
 ```
 FROM rocker/r-base:4.0.2
@@ -333,6 +329,11 @@ COPY Test_Script/Generate_tSNE.R /home/analysis/Generate_tSNE.R
 #Run the Rscript
 RUN Rscript /home/analysis/Generate_tSNE.R
 ```
+
+
+### A little info on "cache"
+<img src="/Docs/cache.jpg" width="500">  
+
 
 Once you have your Dockerfile saved, from the same level as the Dockerfile, build your updated image, this step can take some time.
 
