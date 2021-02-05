@@ -279,6 +279,9 @@ docker build --tag docker_test .
 ```
 docker run --entrypoint /bin/bash -i -t docker_test:latest
 ```
+* -i is short for --interactive. Keep STDIN open even if unattached.
+* -t is short for --tty. Allocates a pseudo terminal that connects your terminal with the container’s STDIN and STDOUT.  
+
 Upon running this command, you will can begin an R session by typing in "R" on the command line. Becuase R is already installed, you can check the R version once you have entered interactive R:
 ```
 R
