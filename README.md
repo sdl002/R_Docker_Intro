@@ -268,8 +268,8 @@ LABEL tags="Docker Test with R/rocker"
 ```
 docker build -t docker_test .
 ```
-* -t is short for tag. It tells docker to tag the image with the provided tag. In this case docker_test
-* The . (period) at the end of the command tells Docker to build the image according to the Dockerfile in the current working directory.
+* -t is short for --tag. It tells docker to tag the image with the provided tag. In this example our tag is docker_test
+* The . (period) at the end of the command tells Docker to build the image based on the Dockerfile that is in the current working directory, your working directory when you run this should be the /Docker_Test directory that we made earlier.
 
 
 &nbsp;  
