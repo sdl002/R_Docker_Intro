@@ -344,7 +344,7 @@ Docker will step through the intructions for building the image based on your Do
 
 You can disable cache by using the --no-cache=true option on the docker build command.  
 
-The basic rules that Docker follows are outlined below (from [Docker Docs](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)):
+##### The basic cache rules that Docker follows are outlined below (from [Docker Docs](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)):
 
 * Starting with a parent image that is already in the cache, the next instruction is compared against all child images derived from that base image to see if one of them was built using the exact same instruction. If not, the cache is invalidated.
 
