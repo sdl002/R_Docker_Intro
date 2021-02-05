@@ -340,7 +340,7 @@ docker build --tag docker_test .
 ### A little info on "cache"
 <img src="/Docs/cache.jpg" width="500">  
 
-Docker will step through the intructions that you have put in your Dockerfile, *in the order they are listed*. While this is happening, Docker is actually checking for an existing image in its cache that it can reuse, *instead of* created a new (duplicate) image.
+Docker will step through the intructions for building the image based on your Dockerfile, and it does so *in the order they are listed*. While this is happening, Docker is actually checking for an existing image in its cache that it can reuse, *instead of* created a new (duplicate) image.
 
 You can disable cache by using the --no-cache=true option on the docker build command.
 
