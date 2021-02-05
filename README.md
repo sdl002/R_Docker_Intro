@@ -24,7 +24,8 @@ This interactive tutorial will introduce participants to the world of Docker and
 ### [5.  Create a Dockerfile and Build a Docker Image](#anchor5)
 ### [6.  Running our Docker Image: interactive and scripted runs](#anchor6)
 ### [7.  Copying Data out of a running Docker container to your host machine](#anchor7)
-### [8.  How all of this gets 10 times cooler with serverless technology!](#anchor8)
+### [8.  Lets push our image to Docker Hub!](#anchor8)
+### [9.  How all of this gets 10 times cooler with serverless technology!](#anchor9)
 
 &nbsp;  
 &nbsp;  
@@ -387,8 +388,30 @@ docker build -t "myimage:1.0" .
 ```
 &nbsp;  
 &nbsp;
+
+
+
+
 <a name="anchor8"></a>
-## 8. How all of this gets 10 times cooler with serverless technology!
+## 8. Lets push our image to our Docker Hub repo
+
+Lets go back to Docker Hub (you should already be logged in from before, but if not, log back in).   
+You can do this directly from Docker Desktop. Or you can do it from the command line by typing.
+```
+docker login
+```
+
+Lets go ahead and push our image to Docker Hub:
+```
+docker image push <YourDockerID>/firstimage
+```
+
+*You may be asked to login if you haven’t already. Then you can go to hub.docker.com, login and check your repositories
+
+
+
+<a name="anchor9"></a>
+## 9. How all of this gets 10 times cooler with serverless technology!
 
 So at this point you might think is pretty cool, but maybe it doesn't seem *overly* useful. Where this gets more exciting is how it can fit into modular work flows and easily read/write from cloud storage like AWS S3 buckets and Aurora PostgreSQL databases. 
 
