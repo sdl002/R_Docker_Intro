@@ -70,7 +70,7 @@ Containers, unlike VMs, are meant to be a way for an entire environment to be pa
 #### Docker container vs. VMs
 ##### Why you might choose Docker over VM for application development:
 1. Containers are a more lightweight option, they start much faster, and use a fraction of the memory compared to booting an entire OS  
-2. Plays will with microservices (i.e. within an AWS set up, see section 8 below)    
+2. Plays well with microservices (i.e. within an AWS set up, see section 8 below)    
 3. Ability to have a consistent environment (reproducible) and shareable to outside environments (no more dependency issues)
 4. Easy to maintain versioning and updates (i.e. CodeCommit/CodePipeline in AWS)  
 
