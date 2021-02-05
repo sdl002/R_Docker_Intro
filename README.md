@@ -25,7 +25,7 @@ This interactive tutorial will introduce participants to the world of Docker and
 ### [6.  Running our Docker Image: interactive and scripted runs](#anchor6)
 ### [7.  Copying Data out of a running Docker container to your host machine](#anchor7)
 ### [8.  Lets push our image to Docker Hub!](#anchor8)
-### [9.  How all of this gets 10 times cooler with serverless technology!](#anchor9)
+### [9.  How all of this gets 10 times cooler with serverless technology and microservices!](#anchor9)
 
 &nbsp;  
 &nbsp;  
@@ -411,7 +411,7 @@ docker image push <YourDockerID>/firstimage
 
 
 <a name="anchor9"></a>
-## 9. How all of this gets 10 times cooler with serverless technology!
+## 9. How all of this gets 10 times cooler with serverless technology and microservices!
 
 So at this point you might think is pretty cool, but maybe it doesn't seem *overly* useful. Where this gets more exciting is how it can fit into modular work flows and easily read/write from cloud storage like AWS S3 buckets and Aurora PostgreSQL databases. 
 
