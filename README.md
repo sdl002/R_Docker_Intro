@@ -120,8 +120,13 @@ My docker desktop version is 2.5.0.1
 ![basic_info_screenshot](/Docs/Docker_Desktop_screenshot.png)  
 
 &nbsp;  
-Please note the Advanced Preferences where you can select CPUs and Memory (this is important if you do not have enough resources when building your image, as it will fail if you surpass the default setting) This can also be set by passing the --memory shortcut.
-![advanced_preferences](/Docs/advanced_prefereces.png)  
+Please note the Advanced Preferences where you can select CPUs and Memory (this is important if you do not have enough resources when building your image, as it will fail if you surpass the default setting) This can also be set by using --memory when you start a container with run (or the shortcut -m)
+example 
+```
+--memory 128m.
+```
+Or you can make changes in advanced preferences on Docker Desktop:
+[advanced_preferences](/Docs/advanced_prefereces.png)  
 
 [More Info](https://docs.docker.com/docker-for-mac/)  
 CPUs: By default, Docker Desktop is set to use half the number of processors available on the host machine. To increase processing power, set this to a higher number; to decrease, lower the number.  
