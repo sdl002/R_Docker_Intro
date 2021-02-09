@@ -501,4 +501,34 @@ README-secret.md
 ```
 
 ### Using multi-stage builds
-A multistage build is really helpful when trying to optimize a Dockerfile while also keeping it easy to read and maintain. Info below is from [Docker Docs](https://docs.docker.com/develop/develop-images/multistage-build/)
+A multistage build is really helpful when trying to optimize a Dockerfile while also keeping it easy to read and maintain. Info below is from [Docker Docs](https://docs.docker.com/develop/develop-images/multistage-build/).  
+
+The trick of the multi-stage build is the utilization of multiple 'FROM' statements, where each 'FROM' comes from a different base (and begins a new 'stage' of the build). Importantly, to keep builds smaller, you can copy specific artifacts from one stage to another (and preventing you from taking things you don't want with you to the final stage). See the example below from [Docker Docs](https://docs.docker.com/develop/develop-images/multistage-build/):  
+
+Dockerfile:
+```
+FROM golang:1.7.3
+WORKDIR /go/src/github.com/alexellis/href-counter/
+RUN go get -d -v golang.org/x/net/html  
+COPY app.go .
+RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app .
+
+FROM alpine:latest  
+RUN apk --no-cache add ca-certificates
+WORKDIR /root/
+COPY --from=0 /go/src/github.com/alexellis/href-counter/app .
+CMD ["./app"]  
+```
+
+* You only need the single Dockerfile. You don’t need a separate build script, either. Just run docker build.
+
+```
+docker build -t alexellis2/href-counter:latest .
+```
+
+* The end result is the same tiny production image as before, with a significant reduction in complexity. You don’t need to create any intermediate images and you don’t need to extract any artifacts to your local system at all.
+
+* How does it work? The second FROM instruction starts a new build stage with the alpine:latest image as its base. The COPY --from=0 line copies just the built artifact from the previous stage into this new stage. The Go SDK and any intermediate artifacts are left behind, and not saved in the final image.
+
+
+
