@@ -463,6 +463,11 @@ docker rm "container name"
 docker container rm -f $(docker ps -aq)
 ```
 
+#### Delete an image  
+```
+docker rmi "image name"
+```
+
 #### Pull an image from a registry 
 ```
 docker pull "image name"
