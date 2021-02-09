@@ -43,7 +43,7 @@ Docker Docs provides excellent documentation for almost any question you might h
 &nbsp;  
 &nbsp;  
 
-<img src="/Docs/docker_release.png" width="350">    
+<img src="/Docs/docker_release.png" width="450">    
 
 ###### To get started, lets discuss some of the major benefits to using Docker with your code/pipeline.
 
