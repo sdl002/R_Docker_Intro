@@ -396,7 +396,7 @@ docker rm temp-container
 ```
 
 If you check your current directory, you should see the analysis folder with the test tSNE PDF:
-<img src="/Docs/test_tSNE.jpg" width="500"> 
+<img src="/Docs/test_tSNE.png" width="500"> 
 
 
 &nbsp;  
