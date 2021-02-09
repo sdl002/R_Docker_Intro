@@ -27,7 +27,7 @@ This interactive tutorial will introduce participants to the world of Docker and
 ### [8.  Lets push our image to Docker Hub!](#anchor8)
 ### [9.  How all of this gets 10 times cooler with serverless technology and microservices!](#anchor9)
 ### [10. Bonus: A few useful docker commands to remember](#anchor10)
-### [Tips and tricks of the trade as you continue advancing in the Docker world](#tips)
+### [*Tips and tricks of the trade as you continue advancing in the Docker world*](#tips)
 
 &nbsp;  
 &nbsp;  
@@ -464,7 +464,7 @@ docker build -t "myimage:1.0" .
 &nbsp;
 
 <a name="Tips"></a>
-## Tips and tricks of the trade as you continue advancing in the Docker world:
+## *Tips and tricks of the trade as you continue advancing in the Docker world:*
 ### .dockerignore
 An important practice in containerizing workflows involves creating lightweight images, and one way to help with minimizing size and can also be used to ensure that you don't expose any code you want kepy private, any commit history, and secrets (keys and credentials).  
 .dockerignore is similar to gitignore in practice
