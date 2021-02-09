@@ -500,3 +500,5 @@ README-secret.md
 README-secret.md
 ```
 
+### Using multi-stage builds
+A multistage build is really helpful when trying to optimize a Dockerfile while also keeping it easy to read and maintain. Info below is from [Docker Docs](https://docs.docker.com/develop/develop-images/multistage-build/)
