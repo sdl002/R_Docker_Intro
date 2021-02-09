@@ -35,7 +35,9 @@ This interactive tutorial will introduce participants to the world of Docker and
 <a name="anchor1"></a>
 # 1. What is Docker and why should we use it?
 &nbsp;    
-<img src="/Docs/docker_static.png" width="150">    
+
+<img src="/Docs/docker_release.png" width="500">    
+   
 
 #### “Docker is an open platform for developing, shipping, and running applications.” - [Docker Docs](https://docs.docker.com/).
 Docker Docs provides excellent documentation for almost any question you might have about Docker. We will refer back to Docker Docs often, and it is a great place to start reading as you being your journey into the world of more reproducible and shareable code through containerization!
@@ -43,7 +45,7 @@ Docker Docs provides excellent documentation for almost any question you might h
 &nbsp;  
 &nbsp;  
 
-<img src="/Docs/docker_release.png" width="450">    
+<img src="/Docs/docker_static.png" width="150"> 
 
 ###### To get started, lets discuss some of the major benefits to using Docker with your code/pipeline.
 
