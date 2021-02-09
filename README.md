@@ -120,7 +120,7 @@ My docker desktop version is 2.5.0.1
 ![basic_info_screenshot](/Docs/Docker_Desktop_screenshot.png)  
 
 &nbsp;  
-Please note the Advanced Preferences where you can select CPUs and Memory (this is important if you do not have enough resources when building your image, as it will fail if you surpass the default setting)  
+Please note the Advanced Preferences where you can select CPUs and Memory (this is important if you do not have enough resources when building your image, as it will fail if you surpass the default setting) This can also be set by passing the --memory shortcut.
 ![advanced_preferences](/Docs/advanced_prefereces.png)  
 
 [More Info](https://docs.docker.com/docker-for-mac/)  
@@ -135,6 +135,10 @@ Disk image size: Specify the size of the disk image.
 Disk image location: Specify the location of the Linux volume where containers and images are stored.  
 
 You can also move the disk image to a different location. If you attempt to move a disk image to a location that already has one, you get a prompt asking if you want to use the existing image or replace it.  
+
+A little extra info on swap:
+
+
 &nbsp;  
 &nbsp;  
 <a name="anchor3"></a>
