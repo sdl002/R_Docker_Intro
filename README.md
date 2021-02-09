@@ -413,10 +413,24 @@ You can do this directly from Docker Desktop. Or you can do it from the command 
 ```
 docker login
 ```
+Before we push lets tag it with our Docker Hub ID, see my example:
 
-Lets go ahead and push our image to Docker Hub:
+1. check for ID:
 ```
-docker image push <YourDockerID>/firstimage
+docker images
+```
+output:
+```
+REPOSITORY      TAG       IMAGE ID       CREATED        SIZE
+docker_test     latest    e09579231577   6 hours ago    865MB
+```
+2. Tag the image with your Docker Hub username:
+```
+docker tag e09579231577 stephlahaye1/docker_r_test
+```
+3. Lets go ahead and push our image to Docker Hub:
+```
+docker image push stephlahaye1/docker_r_test
 ```
 
 *You may be asked to login if you haven’t already. Then you can go to hub.docker.com, login and check your repositories
