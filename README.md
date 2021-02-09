@@ -419,7 +419,7 @@ image from https://towardsdatascience.com/how-to-implement-a-serverless-batch-jo
 
 It is now common practice to use Docker is most large workflows, and it fits *really* well into automated and modular workflows.
 
-An easy to follow example on  how to use dev and prod environments with AWS, with EC2 instances, can be found at this [blog](https://mherman.org/blog/on-demand-test-environments-with-docker-and-aws-ecs/)
+
 
 &nbsp;  
 &nbsp;
