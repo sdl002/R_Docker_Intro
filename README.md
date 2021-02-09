@@ -126,7 +126,7 @@ example
 --memory 128m.
 ```
 Or you can make changes in advanced preferences on Docker Desktop:
-[advanced_preferences](/Docs/advanced_prefereces.png)  
+![advanced_preferences](/Docs/advanced_prefereces.png)  
 
 [More Info](https://docs.docker.com/docker-for-mac/)  
 CPUs: By default, Docker Desktop is set to use half the number of processors available on the host machine. To increase processing power, set this to a higher number; to decrease, lower the number.  
