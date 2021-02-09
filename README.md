@@ -530,5 +530,8 @@ docker build -t alexellis2/href-counter:latest .
 
 * How does it work? The second FROM instruction starts a new build stage with the alpine:latest image as its base. The COPY --from=0 line copies just the built artifact from the previous stage into this new stage. The Go SDK and any intermediate artifacts are left behind, and not saved in the final image.
 
+### Dockerfile best practices
+Please refer to the docker docs best practices for dockerfile development as well:
+https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
 
 
