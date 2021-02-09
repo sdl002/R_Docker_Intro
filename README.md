@@ -26,6 +26,8 @@ This interactive tutorial will introduce participants to the world of Docker and
 ### [7.  Copying Data out of a running Docker container to your host machine](#anchor7)
 ### [8.  Lets push our image to Docker Hub!](#anchor8)
 ### [9.  How all of this gets 10 times cooler with serverless technology and microservices!](#anchor9)
+### [10. Bonus: A few useful docker commands to remember](#anchor10)
+### [Tips and tricks of the trade as you continue advancing in the Docker world](#tips)
 
 &nbsp;  
 &nbsp;  
@@ -420,8 +422,8 @@ It is now common practice to use Docker is most large workflows, and it fits *re
 
 &nbsp;  
 &nbsp;
-
-# Bonus: A few useful docker commands to remember
+<a name="anchor10"></a>
+# 10. Bonus: A few useful docker commands to remember
 <img src="/Docs/Bonus1.jpg" width="500">   
   
 #### Check for Docker images
@@ -461,8 +463,8 @@ docker build -t "myimage:1.0" .
 &nbsp;  
 &nbsp;
 
-
-## Some tips/tricks of the trade as you continue advancing in the Docker world:
+<a name="Tips"></a>
+## Tips and tricks of the trade as you continue advancing in the Docker world:
 ### .dockerignore
 An important practice in containerizing workflows involves creating lightweight images, and one way to help with minimizing size and can also be used to ensure that you don't expose any code you want kepy private, any commit history, and secrets (keys and credentials).  
 .dockerignore is similar to gitignore in practice
