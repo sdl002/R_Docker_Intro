@@ -456,3 +456,47 @@ docker pull "image name"
 ```
 docker build -t "myimage:1.0" .
 ```
+
+
+&nbsp;  
+&nbsp;
+
+
+## Some tips/tricks of the trade as you continue advancing in the Docker world:
+### .dockerignore
+An important practice in containerizing workflows involves creating lightweight images, and one way to help with minimizing size and can also be used to ensure that you don't expose any code you want kepy private, any commit history, and secrets (keys and credentials).  
+.dockerignore is similar to gitignore in practice
+
+See examples (from [codefresh](https://codefresh.io/docker-tutorial/not-ignore-dockerignore-2/))
+
+```
+# ignore .git and .cache folders
+.git
+.cache
+```
+```
+# ignore .git and .cache folders
+.git
+.cache
+```
+```
+# ignore all *.class files in all folders, including build root
+**/*.class
+```
+```
+# ignore all *.class files in all folders, including build root
+**/*.class
+```
+```
+# ignore all markdown files (md) beside all README*.md other than README-secret.md
+*.md
+!README*.md
+README-secret.md
+```
+```
+# ignore all markdown files (md) beside all README*.md other than README-secret.md
+*.md
+!README*.md
+README-secret.md
+```
+
