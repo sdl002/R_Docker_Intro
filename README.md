@@ -136,7 +136,9 @@ Disk image location: Specify the location of the Linux volume where containers a
 
 You can also move the disk image to a different location. If you attempt to move a disk image to a location that already has one, you get a prompt asking if you want to use the existing image or replace it.  
 
-A little extra info on swap:
+A little extra info on [swap](https://thorsten-hans.com/limit-memory-for-docker-containers):
+![swap](/Docs/memory_swap.png)  
+
 
 
 &nbsp;  
