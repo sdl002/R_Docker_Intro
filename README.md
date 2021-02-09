@@ -135,7 +135,7 @@ Disk image location: Specify the location of the Linux volume where containers a
 Swap: Configure swap file size as needed. The default is 1 GB.
 
 A little extra info on [swap](https://thorsten-hans.com/limit-memory-for-docker-containers):
-![swap](/Docs/memory_swap.png width="300")  
+<img src="/Docs/memory_swap.png" width="300">  
 [photo cred](https://thorsten-hans.com/limit-memory-for-docker-containers)
 
 
