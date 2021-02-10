@@ -380,10 +380,12 @@ Now lets run our container, and then copy the data from the container to our hos
 1. Run the container in the background, start the container up with a name like temp-container:
 ```
 docker run -d --name temp-container docker_test:latest tail -f /dev/null
-```
-* We added '-f /dev/null' to the command to prevent the Docker container from shutting down immediately  
+``` 
+* 'docker run' is how we 'run' the container 
 * We added '-d', short for --detach , to run the container in background and print container ID
-
+* --name can be any name you want, to be clear in this example, we call it "temp-container"
+* Tell docker what image you want to use, we are using our 'docker_test:latest'
+* We added 'tail -f /dev/null' to the command to prevent the Docker container from shutting down immediately 
 
 2. Now that our container is running, lets copy from it into our current directory:
 ```
