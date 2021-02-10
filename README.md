@@ -474,15 +474,22 @@ The microservice architecture enables the rapid, frequent and reliable delivery 
 docker images
 ```
 
-#### Check for running containers
+#### List containers runnings
 ```
 docker container ls
 ```
 
-#### Kill a running container (then rm it)
+#### List all running and stopped containers
+```
+docker ps -a
+```
+
+#### Kill a running container
 ```
 docker kill "container name"
 ```
+
+#### Remove a stopped container
 ```
 docker rm "container name"
 ```
@@ -492,9 +499,19 @@ docker rm "container name"
 docker container rm -f $(docker ps -aq)
 ```
 
-#### Delete an image  
+#### Delete a single image  
 ```
 docker rmi "image name"
+```
+
+#### Remove all images
+```
+docker rmi $(docker images -q)
+```
+
+#### Remove everything from Docker host machine(use with caution because will delete everything like images, containers,networks etc)
+```
+docker system prune
 ```
 
 #### Pull an image from a registry 
