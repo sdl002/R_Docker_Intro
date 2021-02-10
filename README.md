@@ -200,6 +200,7 @@ cd Docker_Test
 touch Dockerfile
 mkdir Test_Script
 cd Test_Script
+touch Generate_tSNE.R
 ```
 
 Now either download the Rscript: /R_Docker_Intro/Example_Data/Generate_tSNE.R
