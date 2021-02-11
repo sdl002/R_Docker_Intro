@@ -16,6 +16,15 @@
 This interactive tutorial will introduce participants to the world of Docker and will underscore the reasons why Docker is an integral tool for anyone aiming to make their code more reproducible and shareable, and will also explain why it is essential when sharing to users in outside environments. We will learn how to launch Docker, check for images on our local systems, push and pull from Docker Hub, create a basic Dockerfile, and finally use it to run an Rscript. Before the presentation, please install Docker by following the instructions for [mac](https://docs.docker.com/docker-for-mac/install/), [linux](https://docs.docker.com/get-started/), or [windows](https://docs.docker.com/docker-for-windows/install/). I will be presenting from my Mac, so I will be using Mac Docker Desktop. Participants should also create a free account with [Docker Hub](https://hub.docker.com/) before begining the tutorial.
 &nbsp;  
 &nbsp;  
+
+```diff
+-Please note: this tutorial was developed for Mac users who are using Docker Desktop. These specific examples may not work for you if you are using a linux/Windows machine and you may run into a few issues/incompatibilities.  
+```
+#### *If you are working from Window's, you might consider following a Window's specific tutorial such as: https://docs.microsoft.com/en-us/visualstudio/docker/tutorials/docker-tutorial OR https://www.docker.com/docker-desktop/getting-started-for-windows*
+
+&nbsp;  
+&nbsp;  
+
 ### Topics we will cover:
 ### [1.  What is Docker and why should we use it?](#anchor1)
 ### [2.  Launching Docker Desktop](#anchor2)
@@ -31,12 +40,6 @@ This interactive tutorial will introduce participants to the world of Docker and
 &nbsp;  
 &nbsp;  
  
-### *Please note: this tutorial was developed for Mac users who are using Docker Desktop. These specific examples may not work for you if you are using a linux/Windows machine and you may run into a few issues/incompatibilities.*  
-  
-### *If you are working from Window's, you might consider following a Window's specific tutorial such as: https://docs.microsoft.com/en-us/visualstudio/docker/tutorials/docker-tutorial OR https://www.docker.com/docker-desktop/getting-started-for-windows*
-
-&nbsp;  
-&nbsp;  
 
 <a name="anchor1"></a>
 # 1. What is Docker and why should we use it?
