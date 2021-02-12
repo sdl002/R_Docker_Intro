@@ -20,7 +20,7 @@ This interactive tutorial will introduce participants to the world of Docker and
 -Please note: this tutorial was developed for Mac users who are using Docker Desktop.  
 -Some examples may not be compatible with linux/Windows machines.
 ```
-##### *If you are working from Window's, you might consider following a Window's specific tutorial such as: https://docs.microsoft.com/en-us/visualstudio/docker/tutorials/docker-tutorial OR https://www.docker.com/docker-desktop/getting-started-for-windows*
+##### *If you are working from a Windows machine, you might consider following a Window's specific tutorial such as: https://docs.microsoft.com/en-us/visualstudio/docker/tutorials/docker-tutorial OR https://www.docker.com/docker-desktop/getting-started-for-windows*
   
 &nbsp;  
 
