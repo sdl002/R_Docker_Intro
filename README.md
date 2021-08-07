@@ -485,7 +485,7 @@ The microservice architecture enables the rapid, frequent and reliable delivery 
 docker images
 ```
 
-#### List containers runnings
+#### List containers running
 ```
 docker container ls
 ```
