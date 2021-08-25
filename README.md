@@ -552,23 +552,8 @@ See examples (from [codefresh](https://codefresh.io/docker-tutorial/not-ignore-d
 .cache
 ```
 ```
-# ignore .git and .cache folders
-.git
-.cache
-```
-```
 # ignore all *.class files in all folders, including build root
 **/*.class
-```
-```
-# ignore all *.class files in all folders, including build root
-**/*.class
-```
-```
-# ignore all markdown files (md) beside all README*.md other than README-secret.md
-*.md
-!README*.md
-README-secret.md
 ```
 ```
 # ignore all markdown files (md) beside all README*.md other than README-secret.md
